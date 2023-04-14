@@ -1,0 +1,399 @@
+
+/* colors */
+:root {
+    --forest-green: #007F22;
+    --deep-gold: #FFCC00;
+    --light-yellow: #FFF9AE;
+    --orange: #D4711A;
+}
+
+
+/* base styles */
+html {
+    font-size: 16px;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: var(--light-yellow);
+    font-family: Helvetica, sans-serif;
+    font-size: 1rem;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+header, footer {
+    border-radius: 5px;
+}
+
+.uppercase {
+    text-transform: uppercase;
+}
+
+.accent {
+    font-family: 'Preahvihear', sans-serif; ;
+}
+
+/* header - mobile */
+header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
+.header-logo {
+    width: 50%;
+    max-width: 50%;
+    margin: 20px;
+}
+
+.mobile-nav {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.mobile-nav-list {
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    justify-content: center;
+    margin: 0 20px 20px 20px;
+}
+
+.nav-list {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.nav-item {
+    list-style: none;
+    margin: 5px;
+    padding: 5px;
+    border: none;
+    border-radius: 5px;
+    font-size: .7rem;
+    text-align: center;
+    text-transform: uppercase;
+    transition: background-color 0.3s ease;
+    background-color: var(--forest-green);
+
+}
+
+.nav-link {
+    text-decoration: none;
+    color: var(--deep-gold);
+    transition: color 0.3s ease;
+}
+
+.nav-item:hover {
+    background-color: var(--light-yellow);
+}
+
+.nav-item:hover a {
+    color: black;
+}
+
+
+/* homepage - mobile */
+main {
+    margin-top: 40px;
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero-text {
+    line-height: 1.8rem;
+    text-align: center;
+}
+
+.about {
+    margin-top: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.about-img {
+    width: 100%;
+    max-width: 100%;
+    border-radius: 5px;
+}
+
+.about-description {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    margin-top: 40px;
+}
+
+.about-text {
+    padding: 10px 0;
+    line-height: 1.6rem;
+}
+
+/* footer - mobile */
+footer {
+    margin-top: 40px;
+    padding: 0 20px;
+    width: 100%;
+    background-color: var(--forest-green);
+}
+
+.contact {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.location {
+    border: none;
+    border-radius: 5px;
+    background-color: var(--light-yellow);
+}
+
+.location {
+    padding: 30px;
+}
+
+.address, .phone, .fax, .email {
+    padding: 2px 0;
+    font-size: .75rem;
+}
+
+.contact-img {
+    width: 40%;
+    max-width: 50%;
+    margin-top: 25px;
+    border-radius: 5px;
+}
+
+.copyright {
+    text-align: center;
+    margin: 40px 0 20px 0;
+
+}
+
+.copyright > p {
+    font-size: .55rem;
+    font-style: italic;
+    padding-bottom: 10px;
+    color: var(--light-yellow)
+}
+
+/* 
+
+tablet styles 
+
+*/
+
+@media screen and (min-width: 600px) {
+    /* header - tablet */
+    .header-logo {
+        width: 40%;
+        max-width: 50%;
+    }
+
+    .nav-item {
+        margin: 15px;
+        padding: 10px;
+        font-size: 1rem;
+    }
+
+    /* homepage - tablet */
+    main {
+        margin-top: 80px;
+        background: url('img/blob-1.png');
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+
+    .hero-text {
+        font-size: 1.3rem;
+    }
+    
+    .about {
+        margin-top: 80px;
+    }
+
+    .about-img {
+        width: 70%;
+        max-width: 70%;
+    }
+
+    .about-description {
+        margin-top: 60px;
+    }
+
+    .about-text {
+        font-size: 1.3rem;
+        padding: 20px 0;
+        line-height: 1.8rem;
+    }
+
+
+    /* footer - tablet */
+    footer {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .contact {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        margin: 40px 0 0 0;
+        width: 90%;
+    }
+
+    #visit-us {
+        font-size: 1.2rem;
+    }
+
+    .location > p {
+        font-size: 1rem;
+    }
+
+    .location {
+        padding: 20px;
+    }
+
+    .copyright {
+        padding: 10px;
+    }
+
+
+    .copyright > p {
+        font-size: .8rem;
+    }
+
+    .contact-img {
+        width: 30%;
+        max-width: 30%;
+        margin-left: 55px;
+        margin-top: 0;
+    }
+
+}
+
+@media screen and (min-width: 1300px) {
+    /* header - desktop */
+    header {
+        align-items: self-end;
+        justify-content: flex-start;
+        flex-direction: row;    }
+
+    .mobile-nav {
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        width: 100%;
+    }
+
+    .header-logo {
+        width: 20%;
+        max-width: 20%;
+        margin: 20px 20px 20px 10px;
+    }
+
+    .mobile-nav-list {
+        flex-direction: row;
+        justify-content: flex-start;
+        margin-right: 30px;
+        margin-top: 40px;
+    }
+
+    .nav-item {
+        margin: 15px;
+        padding: 10px;
+        font-size: .8rem;
+    }
+
+    /* main - desktop */
+    main {
+        margin-top: 150px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .hero-area {
+        width: 80%;
+    }
+    
+    .hero-text {
+        font-size: 1.8rem;
+        line-height: 3rem;
+        text-align: center;
+    }
+    
+    .about {
+        margin-top: 150px;
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: flex-start;
+    }
+    
+    .about-img {
+        width: 50%;
+        max-width: 50%;
+    }
+    
+    .about-description {
+        margin-left: 70px;
+        width: 40%;
+        margin-top: 0;
+    }
+    
+    .about-text {
+        padding: 15px 0;
+        font-size: 1.2rem;
+    }
+
+    /* footer - desktop */
+    footer {
+        margin-top: 200px;
+        flex-flow: row;
+    }
+
+    .contact {
+        margin: 20px 0;
+        justify-content: flex-start;
+    }
+
+    .location > p {
+        font-size: .8rem;
+    }
+
+    .contact-img {
+        width: 15%;
+        max-width: 15%;
+    }
+
+    .copyright {
+        width: 20%;
+    }
+
+    .copyright > p {
+        font-size: .7rem;
+        text-align: right;
+    }
+}
