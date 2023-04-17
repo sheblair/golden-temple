@@ -144,38 +144,20 @@ main {
     align-items: center;
 }
 
-.hero-text {
+.hero-text-upper, .hero-text-lower {
     line-height: 1.8rem;
 }
 
-.about {
-    margin-top: 40px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-.about-img {
+.hero-img {
     width: 100%;
     max-width: 100%;
     border-radius: 5px;
-}
-
-.about-description {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
-    margin-top: 40px;
-}
-
-.about-text {
-    padding: 10px 0;
-    line-height: 1.6rem;
+    margin: 25px 0;
 }
 
 /* contact - mobile */
 .contact {
-    margin-top: 20px;
+    margin-top: 25px;
     background-color: var(--deep-gold);
     color: black;
     width: 100%;
@@ -187,15 +169,64 @@ main {
     border-radius: 5px;
 }
 
-.location {
-    padding: 30px;
+.visit-us, .follow-us {
+    font-weight: bold;
 }
 
-.address, .phone, .fax, .email {
-    padding: 2px 0;
+.location {
+    padding: 25px;
+}
+
+.location-bham {
+    margin-top: 10px;
+}
+
+.location-tville {
+    margin-top: 15px;
+}
+
+.location-bham p, .location-tville p {
     font-size: .75rem;
 }
 
+.location-bham a, .location-tville a {
+    color: black;
+    text-decoration: none;
+}
+
+.address {
+    padding-top: 8px;
+}
+
+.phone, .fax, .email {
+    padding-top: 2px;
+}
+
+.follow-us {
+    text-align: center;
+}
+
+.social-media {
+    display: flex;
+    flex-direction: column;
+    margin-top: 40px; 
+}
+
+.social-media a {
+    color: black;
+}
+
+.social-media-icons {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-top: 10px;  
+}
+
+.social-media-icons p {
+    margin: 0 10px;
+    font-size: 1.3rem;
+}
 
 /* footer - mobile */
 footer {
@@ -203,20 +234,26 @@ footer {
     padding: 0 20px;
     width: 100%;
     background-color: var(--forest-green);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
-.social-icons {
+.footer-icons {
     display: flex;
     flex-direction: row;
+    justify-content: space-between;
+    margin-top: 20px;
 }
 
-.social-icon {
-    color: var(--deep-gold)
+.footer-icons a {
+    color: var(--deep-gold);
+    margin: 0 5px;
 }
 
 .copyright {
     text-align: center;
-    margin: 20px 0 0 0;
+    margin: 10px 0 0 0;
 }
 
 .copyright > p {
@@ -257,7 +294,7 @@ tablet styles
         margin-top: 80px;
     }
 
-    .about-img {
+    .hero-img {
         width: 70%;
         max-width: 70%;
     }
@@ -289,7 +326,7 @@ tablet styles
         width: 90%;
     }
 
-    #visit-us {
+    .visit-us {
         font-size: 1.2rem;
     }
 
@@ -390,7 +427,7 @@ desktop styles
         justify-content: flex-start;
     }
     
-    .about-img {
+    .hero-img {
         width: 50%;
         max-width: 50%;
     }
