@@ -387,8 +387,13 @@ desktop styles
     .logo-link {
         justify-content: flex-start;
         margin-left: 15px;
-        width: 30%;
-        max-width: 30%;
+        width: 25%;
+        max-width: 25%;
+    }
+
+    .header-logo {
+        width: 100%;
+        max-width: 100%;
     }
 
     .header-logo {
@@ -408,8 +413,12 @@ desktop styles
         margin: 40px;
     }
 
+    .dropdown .dropbtn, .dropdown-content a {
+        font-size: .9rem;
+    }
+
     .navbar {
-        margin-right: 15px;
+        margin-right: 70px;
     }
 
     /* main - desktop */
@@ -491,6 +500,10 @@ desktop styles
         display: flex;
         flex-flow: row wrap;
         justify-content: flex-start;
+    }
+
+    .location-tville {
+        margin-top: 15px;
     }
 
     iframe {
