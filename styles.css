@@ -59,8 +59,8 @@ header {
 }
 
 .header-logo {
-    width: 65%;
-    max-width: 65%;
+    width: 85%;
+    max-width: 85%;
     margin: 20px;
 }
 
@@ -164,24 +164,20 @@ main {
     border-radius: 5px;
 }
 
-.location {
+.contact-container {
     border: none;
     border-radius: 5px;
 }
 
-.visit-us, .follow-us {
+.visit-us, .follow-us, .store-title {
     font-weight: bold;
 }
 
-.location {
+.contact-container {
     padding: 25px;
 }
 
-.location-bham {
-    margin-top: 10px;
-}
-
-.location-tville {
+.location-bham, .location-tville {
     margin-top: 15px;
 }
 
@@ -271,10 +267,13 @@ tablet styles
 
 @media screen and (min-width: 600px) {
     /* header - tablet */
-    .nav-item {
-        margin: 15px;
-        padding: 10px;
-        font-size: 1rem;
+    .dropdown .dropbtn, .dropdown-content a {
+        font-size: .8rem;
+    }
+
+    .header-logo {
+        width: 65%;
+        max-width: 65%;
     }
 
     /* homepage - tablet */
@@ -283,32 +282,57 @@ tablet styles
         background: url('img/background-temple-2.png');
         background-size: contain;
         background-repeat: no-repeat;
-        background-position: center;
+    }
+
+    .hero-area {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
     }
 
     .hero-text {
         font-size: 1.3rem;
     }
-    
-    .about {
-        margin-top: 80px;
-    }
 
     .hero-img {
-        width: 70%;
-        max-width: 70%;
+        width: 80%;
+        max-width: 80%;
     }
 
-    .about-description {
-        margin-top: 60px;
+
+    /* contact - tablet */
+    .contact {
+        margin-top: 50px;
+        width: 90%;
     }
 
-    .about-text {
-        font-size: 1.3rem;
-        padding: 20px 0;
-        line-height: 1.8rem;
+    .contact-container {
+        padding: 20px;
+        display: flex;
+        flex-direction: column;
+        margin-top: 10px;
     }
 
+    .visit-us {
+        font-size: 1.2rem;
+        margin-left: 20px;
+    }
+
+    .contact-container > p {
+        font-size: 1rem;
+    }
+
+    .stores {
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: flex-start;
+        align-items: flex-start;
+        margin: 20px;
+    }
+
+    .location-bham {
+        margin-right: 50px;
+    }
 
     /* footer - tablet */
     footer {
@@ -318,42 +342,13 @@ tablet styles
         align-items: center;
     }
 
-    .contact {
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-        margin: 40px 0 0 0;
-        width: 90%;
-    }
-
-    .visit-us {
-        font-size: 1.2rem;
-    }
-
-    .location > p {
-        font-size: 1rem;
-    }
-
-    .location {
-        padding: 20px;
-    }
-
     .copyright {
         padding: 10px;
     }
 
-
     .copyright > p {
-        font-size: .8rem;
+        font-size: .6rem;
     }
-
-    .contact-img {
-        width: 30%;
-        max-width: 30%;
-        margin-left: 55px;
-        margin-top: 0;
-    }
-
 }
 
 /* 
@@ -362,7 +357,7 @@ desktop styles
 
 */
 
-@media screen and (min-width: 1300px) {
+@media screen and (min-width: 900px) {
     /* header - desktop */
     header {
         align-items: center;
@@ -449,7 +444,7 @@ desktop styles
         justify-content: flex-start;
     }
 
-    .location > p {
+    .contact-container > p {
         font-size: .8rem;
     }
 
