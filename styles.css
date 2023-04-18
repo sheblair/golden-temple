@@ -361,14 +361,15 @@ desktop styles
     /* header - desktop */
     header {
         align-items: center;
-        flex-direction: row;  
+        flex-direction: row;
+        justify-content: space-between;
     }
 
     .logo-link {
         justify-content: flex-start;
         margin-left: 15px;
-        width: 35%;
-        max-width: 35%;
+        width: 30%;
+        max-width: 30%;
     }
 
     .header-logo {
@@ -388,10 +389,8 @@ desktop styles
         margin: 40px;
     }
 
-    .nav-item {
-        margin: 15px;
-        padding: 10px;
-        font-size: 1rem;
+    .navbar {
+        margin-right: 15px;
     }
 
     /* main - desktop */
