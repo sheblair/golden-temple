@@ -328,7 +328,7 @@ tablet styles
         margin-left: 20px;
     }
 
-    .contact-container > p {
+    .location-bham p, .location-tville p {
         font-size: 1rem;
     }
 
@@ -472,14 +472,42 @@ desktop styles
         width: 100%;
     }
 
-    .contact-container > p {
+    .stores {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .location-info {
+        margin-right: 30px;
+    }
+
+    .location-bham p, .location-tville p {
         font-size: .8rem;
     }
 
     .location-bham, .location-tville {
-        width: 45%;
+        width: 100%;
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: flex-start;
     }
 
+    iframe {
+        width: 50%;
+    }
+
+    .visit-us, .follow-us {
+        font-size: 1.5rem;
+    }
+
+    .social-media-icons i {
+        font-size: 1.5rem;
+    }
+
+    .social-media-icons {
+        margin: 15px 0;
+    }
 
     /* footer - desktop */
     footer {
