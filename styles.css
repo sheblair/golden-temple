@@ -46,6 +46,10 @@ header, footer {
 }
 
 /* header - mobile */
+#desktop-nav-left, #desktop-nav-right {
+    display: none;
+}
+
 header {
     display: flex;
     flex-direction: column;
@@ -378,47 +382,40 @@ desktop styles
 
 @media screen and (min-width: 1200px) {
     /* header - desktop */
+
+    #mobile-nav {
+        display: none;
+    }
+
+    #desktop-nav-left, #desktop-nav-right {
+        display: flex;
+        margin-bottom: 30px;
+    }
+
     header {
-        align-items: center;
+        align-items: flex-end;
         flex-direction: row;
-        justify-content: space-between;
+        justify-content: center;
+        margin-top: 20px;
     }
 
     .logo-link {
-        justify-content: flex-start;
-        margin-left: 15px;
-        width: 25%;
-        max-width: 25%;
+        width: 30%;
+        max-width: 30%;
     }
 
     .header-logo {
         width: 100%;
         max-width: 100%;
+        margin: 0;
     }
 
-    .header-logo {
-        margin: 20px 20px 20px 0;
-    }
-
-    .mobile-nav {
-        flex-direction: row;
-        align-items: center;
-        justify-content: flex-end;
-        width: 100%;
-    }
-
-    .mobile-nav-list {
-        flex-direction: row;
-        justify-content: flex-start;
-        margin: 40px;
-    }
+    /* .dropdown .dropbtn {
+        margin: 0 10px;
+    } */
 
     .dropdown .dropbtn, .dropdown-content a {
         font-size: .9rem;
-    }
-
-    .navbar {
-        margin-right: 70px;
     }
 
     /* main - desktop */
