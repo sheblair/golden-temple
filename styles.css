@@ -2,8 +2,8 @@
 /* colors */
 :root {
     --forest-green: #00661B;
-    --deep-gold: #FFCC00;
-    --light-yellow: #FFF9AE;
+    --deep-gold: #FFD326;
+    --light-yellow: #fcf8c3;
     --orange: #D4711A;
 }
 
@@ -168,7 +168,7 @@ main {
     margin-top: 25px;
     background-color: var(--deep-gold);
     color: black;
-    width: 100%;
+    width: 90%;
     border-radius: 5px;
 }
 
@@ -293,7 +293,7 @@ tablet styles
     /* homepage - tablet */
     main {
         margin-top: 80px;
-        background: url('img/background-temple-2.png');
+        background: url('img/background-flower-1-paler.png');
         background-size: contain;
         background-repeat: no-repeat;
     }
@@ -306,18 +306,18 @@ tablet styles
 
     .hero-text-lower, .hero-text-upper {
         font-size: 1.3rem;
+        width: 90%;
     }
 
     .hero-img-upper {
-        width: 80%;
-        max-width: 80%;
+        width: 90%;
+        max-width: 90%;
     }
 
 
     /* contact - tablet */
     .contact {
         margin-top: 50px;
-        width: 90%;
     }
 
     .contact-container {
@@ -382,7 +382,6 @@ desktop styles
 
 @media screen and (min-width: 1200px) {
     /* header - desktop */
-
     #mobile-nav {
         display: none;
     }
@@ -475,7 +474,6 @@ desktop styles
     .contact {
         margin-top: 170px;
         justify-content: flex-start;
-        width: 100%;
     }
 
     .stores {
