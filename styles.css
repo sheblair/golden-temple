@@ -1,5 +1,14 @@
 
-/* colors */
+/* 
+*
+*
+*
+BASE STYLES
+*
+*
+*
+*/
+
 :root {
     --forest-green: #00661B;
     --deep-gold: #FFD326;
@@ -7,8 +16,6 @@
     --orange: #D4711A;
 }
 
-
-/* base styles */
 html {
     font-size: 16px;
 }
@@ -45,7 +52,30 @@ header, footer {
     display: none;
 }
 
-/* header - mobile */
+@media screen and (min-width: 600px) {
+    .mobile-only {
+        display: none;
+    }
+}
+
+
+/* 
+*
+*
+*
+*
+*
+*
+MOBILE STYLES
+*
+*
+*
+*
+*
+*
+*/
+
+/* HEADER - MOBILE */
 #desktop-nav-left, #desktop-nav-right {
     display: none;
 }
@@ -72,7 +102,6 @@ header {
     margin: 20px;
 }
 
-/* dropdown nav - mobile */
 .navbar {
     display: flex;
     flex-flow: row wrap;
@@ -142,7 +171,7 @@ header {
   display: block;
 }
 
-/* homepage - mobile */
+/* HOMEPAGE - MOBILE */
 main {
     margin-top: 40px;
     width: 90%;
@@ -163,7 +192,6 @@ main {
     margin: 25px 0;
 }
 
-/* contact - mobile */
 .contact {
     margin-top: 25px;
     background-color: var(--deep-gold);
@@ -238,7 +266,7 @@ iframe {
     font-size: 1.3rem;
 }
 
-/* footer - mobile */
+/* FOOTER - MOBILE */
 footer {
     margin-top: 40px;
     padding: 0 20px;
@@ -273,14 +301,44 @@ footer {
     color: var(--deep-gold)
 }
 
+/* BOUTIQUE - MOBILE */
+.boutique-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.boutique-section {
+    margin: 20px 0;
+}
+
+.boutique-description {
+    margin-bottom: 20px;
+}
+
+.boutique-img {
+    width: 100%;
+    max-width: 100%;
+    margin: 10px 0;
+}
+
 /* 
-
-tablet styles 
-
+*
+*
+*
+*
+*
+*
+TABLET STYLES
+*
+*
+*
+*
+*
 */
 
 @media screen and (min-width: 600px) {
-    /* header - tablet */
+    /* HEADER - TABLET */
     .dropdown .dropbtn, .dropdown-content a {
         font-size: .8rem;
     }
@@ -290,7 +348,23 @@ tablet styles
         max-width: 65%;
     }
 
-    /* homepage - tablet */
+     /* FOOTER - TABLET */
+     footer {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .copyright {
+        padding: 10px;
+    }
+
+    .copyright > p {
+        font-size: .6rem;
+    }
+
+    /* HOMEPAGE - TABLET */
     main {
         margin-top: 80px;
     }
@@ -317,8 +391,6 @@ tablet styles
         max-width: 90%;
     }
 
-
-    /* contact - tablet */
     .contact {
         margin-top: 50px;
     }
@@ -360,31 +432,50 @@ tablet styles
         justify-self: flex-end;
     }
 
-    /* footer - tablet */
-    footer {
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-        align-items: center;
-    }
+   /* BOUTIQUE - TABLET */
+   .boutique-container {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        gap: 15px;
+   }
 
-    .copyright {
-        padding: 10px;
-    }
+   .boutique-section {
+        margin: 0;
+   }
 
-    .copyright > p {
-        font-size: .6rem;
-    }
+   .boutique-description {
+        margin-bottom: 5px;
+   }
+
+   #grid-section-1 {
+       align-self: start;
+   }
+
+   .boutique-bottom-heading {
+        margin-top: 40px;
+   }
+
 }
 
 /* 
-
-desktop styles
-
+*
+*
+*
+*
+*
+*
+DESKTOP STYLES
+*
+*
+*
+*
+*
+*
 */
 
 @media screen and (min-width: 1200px) {
-    /* header - desktop */
+    /* HEADER - DESKTOP */
     #mobile-nav {
         display: none;
     }
@@ -420,7 +511,17 @@ desktop styles
         font-size: .9rem;
     }
 
-    /* main - desktop */
+    /* FOOTER - DESKTOP */
+    footer {
+        margin-top: 100px;
+    }
+
+    .copyright > p {
+        font-size: .7rem;
+        text-align: center;
+    }
+
+    /* HOMEPAGE - DESKTOP */
     main {
         margin-top: 80px;
         display: flex;
@@ -473,7 +574,6 @@ desktop styles
         width: 45%;
     }
 
-    /* contact - desktop */
     .contact {
         margin-top: 170px;
         justify-content: flex-start;
@@ -520,13 +620,8 @@ desktop styles
         margin: 15px 0;
     }
 
-    /* footer - desktop */
-    footer {
-        margin-top: 100px;
-    }
+    /* BOUTIQUE - DESKTOP */
 
-    .copyright > p {
-        font-size: .7rem;
-        text-align: center;
-    }
+
+
 }
