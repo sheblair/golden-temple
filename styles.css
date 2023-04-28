@@ -301,7 +301,15 @@ footer {
     color: var(--deep-gold)
 }
 
-/* BOUTIQUE - MOBILE */
+/* 
+*
+*
+*
+BOUTIQUE - MOBILE 
+*
+*
+*
+*/
 .boutique-container {
     display: flex;
     flex-direction: column;
@@ -320,6 +328,58 @@ footer {
     width: 100%;
     max-width: 100%;
     margin: 10px 0;
+}
+
+/* 
+*
+*
+*
+BIRMINGHAM - MOBILE 
+*
+*
+*
+*/
+
+#birmingham-main {
+    align-items: flex-start;
+}
+
+#birmingham-main a {
+    color: black;
+}
+
+#birmingham-main img {
+    width: 100%;
+    max-width: 100%;
+}
+
+.bham-description, .bham-address, .bham-store-info, .cafe-info {
+    margin-top: 20px;
+}
+
+.bham-description, .bham-address {
+    line-height: 1.4rem;
+}
+
+.bham-address, .bham-store-info, .cafe-info {
+    background-color: var(--deep-gold);
+    padding: 10px;
+    border-radius: 5px;
+    width: 100%;
+}
+
+.bham-store-info, .cafe-info {
+    display: flex;
+    flex-direction: column;
+}
+
+.bham-store-info p:first-child, .cafe-info p:first-child {
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.bham-store-info p, .cafe-info p {
+    margin: 3px 0;
 }
 
 /* 
