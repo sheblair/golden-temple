@@ -353,39 +353,57 @@ LOCATIONS - MOBILE
     max-width: 100%;
 }
 
-.bham-description, .bham-address, .bham-store-info, 
-.cafe-info, .tville-description, .tville-address, 
-.tville-store-info {
+.bham-description, .bham-info, 
+.cafe-info, .tville-description, .tville-info, 
+.tville-hours {
     margin-top: 20px;
 }
 
-.bham-description, .bham-address, .tville-description, .tville-address {
+.bham-description, .bham-info, .tville-description, .tville-info {
     line-height: 1.4rem;
 }
 
-.bham-address, .bham-store-info, .cafe-info, .tville-address, .tville-store-info {
+.bham-info, .cafe-info, .tville-info, .tville-hours {
     background-color: var(--deep-gold);
     padding: 10px;
     border-radius: 5px;
     width: 100%;
 }
 
-.bham-store-info, .cafe-info, .tville-store-info {
-    display: flex;
-    flex-direction: column;
+.bham-info p:first-child, .tville-info p:first-child {
+    margin-top: 5px;
 }
 
-.bham-store-info p:first-child, .cafe-info p:first-child, .tville-store-info p:first-child {
+.cafe-info p:first-child {
     font-weight: bold;
+    margin: 5px 0;
+}
+
+.cafe-info p:nth-child(4) {
+    margin-top: 10px;
+}
+
+.bham-info p:nth-child(3) {
+    margin-bottom: 15px;
+}
+
+.hours {
+    font-weight: bold;
+    margin-top: 5px;
+}
+
+.tville-hours p:first-child {
+    margin-bottom: 5px;
+}
+
+.tville-info p:first-child {
     margin-bottom: 10px;
 }
 
-.bham-store-info p, .cafe-info p, .tville-store-info p {
-    margin: 3px 0;
-}
-
-.tville-address p:nth-child(3) {
-    margin-top: 5px;
+#tville-facebook-link {
+    font-weight: bold;
+    font-size: 1.2rem;
+    margin: 15px 0 0 0;
 }
 
 /* 
