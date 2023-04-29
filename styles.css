@@ -334,52 +334,58 @@ BOUTIQUE - MOBILE
 *
 *
 *
-BIRMINGHAM - MOBILE 
+LOCATIONS - MOBILE 
 *
 *
 *
 */
 
-#birmingham-main {
+#birmingham-main, #trussville-main {
     align-items: flex-start;
 }
 
-#birmingham-main a {
+#birmingham-main a, #trussville-main a {
     color: black;
 }
 
-#birmingham-main img {
+#birmingham-main img, #trussville-main img {
     width: 100%;
     max-width: 100%;
 }
 
-.bham-description, .bham-address, .bham-store-info, .cafe-info {
+.bham-description, .bham-address, .bham-store-info, 
+.cafe-info, .tville-description, .tville-address, 
+.tville-store-info {
     margin-top: 20px;
 }
 
-.bham-description, .bham-address {
+.bham-description, .bham-address, .tville-description, .tville-address {
     line-height: 1.4rem;
 }
 
-.bham-address, .bham-store-info, .cafe-info {
+.bham-address, .bham-store-info, .cafe-info, .tville-address, .tville-store-info {
     background-color: var(--deep-gold);
     padding: 10px;
     border-radius: 5px;
     width: 100%;
 }
 
-.bham-store-info, .cafe-info {
+.bham-store-info, .cafe-info, .tville-store-info {
     display: flex;
     flex-direction: column;
 }
 
-.bham-store-info p:first-child, .cafe-info p:first-child {
+.bham-store-info p:first-child, .cafe-info p:first-child, .tville-store-info p:first-child {
     font-weight: bold;
     margin-bottom: 10px;
 }
 
-.bham-store-info p, .cafe-info p {
+.bham-store-info p, .cafe-info p, .tville-store-info p {
     margin: 3px 0;
+}
+
+.tville-address p:nth-child(3) {
+    margin-top: 5px;
 }
 
 /* 
