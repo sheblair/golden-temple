@@ -366,6 +366,10 @@ LOCATIONS - MOBILE
     max-width: 100%;
 }
 
+.bham-left, .bham-right {
+    width: 100%;
+}
+
 .bham-description, .bham-info, 
 .cafe-info, .tville-description, .tville-info, 
 .tville-hours {
@@ -555,7 +559,13 @@ TABLET STYLES
    }
 
      /* LOCATIONS - BIRMINGHAM AND TRUSSVILLE - TABLET*/
-    .bham-img, .tville-img {
+    .bham-left {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+     .bham-img, .tville-img {
         width: 90%;
         max-width: 90%;
     }
@@ -758,8 +768,36 @@ DESKTOP STYLES
         margin: 15px 0;
     }
 
-    /* BOUTIQUE - DESKTOP */
+    /* LOCATIONS - DESKTOP */
+    #birmingham-main {
+        flex-direction: row;
+        justify-content: space-between;
+    }
 
+    .bham-left {
+        width: 50%;
+        margin-right: 15px;
+    }
 
+    .bham-right {
+        width: 48%;
+    }
 
+    .bham-info, .cafe-info {
+        display: flex;
+        flex-direction: row;
+    }
+
+    #iframe-bham, #iframe-cafe {
+        width: 200px;
+        height: 200px;
+    }
+
+    .bham-text, .cafe-text {
+        margin-right: 10px;
+    }
+
+    .bham-text p, .cafe-text p {
+        font-size: .9rem;
+    }
 }
