@@ -48,11 +48,15 @@ header, footer {
     font-family: 'Preahvihear', sans-serif; ;
 }
 
+.tablet-only {
+    display: none;
+}
+
 .desktop-only {
     display: none;
 }
 
-@media screen and (min-width: 600px) {
+@media screen and (min-width: 800px) {
     .mobile-only {
         display: none;
     }
@@ -171,7 +175,50 @@ header {
   display: block;
 }
 
-/* HOMEPAGE - MOBILE */
+/* FOOTER - MOBILE */
+footer {
+    margin-top: 40px;
+    padding: 0 20px;
+    width: 100%;
+    background-color: var(--forest-green);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.footer-icons {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.footer-icons a {
+    color: var(--deep-gold);
+    margin: 0 5px;
+}
+
+.copyright {
+    text-align: center;
+    margin: 10px 0 0 0;
+}
+
+.copyright > p {
+    font-size: .55rem;
+    font-style: italic;
+    padding-bottom: 10px;
+    color: var(--deep-gold)
+}
+
+/*
+*
+*
+*
+HOMEPAGE - MOBILE 
+*
+*
+*
+*/
 main {
     margin-top: 40px;
     width: 90%;
@@ -266,41 +313,6 @@ iframe {
     font-size: 1.3rem;
 }
 
-/* FOOTER - MOBILE */
-footer {
-    margin-top: 40px;
-    padding: 0 20px;
-    width: 100%;
-    background-color: var(--forest-green);
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-.footer-icons {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    margin-top: 20px;
-}
-
-.footer-icons a {
-    color: var(--deep-gold);
-    margin: 0 5px;
-}
-
-.copyright {
-    text-align: center;
-    margin: 10px 0 0 0;
-}
-
-.copyright > p {
-    font-size: .55rem;
-    font-style: italic;
-    padding-bottom: 10px;
-    color: var(--deep-gold)
-}
-
 /* 
 *
 *
@@ -310,6 +322,7 @@ BOUTIQUE - MOBILE
 *
 *
 */
+
 .boutique-container {
     display: flex;
     flex-direction: column;
@@ -348,7 +361,7 @@ LOCATIONS - MOBILE
     color: black;
 }
 
-#birmingham-main img, #trussville-main img {
+.bham-img, .tville-img {
     width: 100%;
     max-width: 100%;
 }
@@ -374,7 +387,7 @@ LOCATIONS - MOBILE
     margin-top: 5px;
 }
 
-.cafe-info p:first-child {
+.bham-info p:first-child, .cafe-info p:first-child {
     font-weight: bold;
     margin: 5px 0;
     font-size: 1.2rem;
@@ -384,13 +397,9 @@ LOCATIONS - MOBILE
     margin-top: 10px;
 }
 
-.bham-info p:nth-child(3) {
-    margin-bottom: 15px;
-}
-
 .hours {
     font-weight: bold;
-    margin-top: 5px;
+    margin-top: 10px;
 }
 
 .tville-hours p:first-child {
@@ -422,7 +431,11 @@ TABLET STYLES
 *
 */
 
-@media screen and (min-width: 600px) {
+@media screen and (min-width: 800px) {
+    .tablet-only {
+        display: block;
+    }
+
     /* HEADER - TABLET */
     .dropdown .dropbtn, .dropdown-content a {
         font-size: .8rem;
@@ -511,7 +524,7 @@ TABLET STYLES
         margin-top: 30px;
     }
 
-    iframe {
+    #iframe-bham-home, #iframe-tville-home {
         width: 45%;
         margin-top: 0;
         justify-self: flex-end;
@@ -541,6 +554,46 @@ TABLET STYLES
         margin-top: 40px;
    }
 
+     /* LOCATIONS - BIRMINGHAM AND TRUSSVILLE - TABLET*/
+    .bham-img, .tville-img {
+        width: 90%;
+        max-width: 90%;
+    }
+
+    #birmingham-main, #trussville-main {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 90%;
+    }
+
+    .bham-description, .tville-description {
+        width: 90%;
+    }
+
+    .bham-info, .cafe-info, .tville-info {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    #iframe-bham, #iframe-cafe, #iframe-tville {
+        width: 45%;
+        margin: 10px 10px 10px 0;
+    }
+
+    .bham-text, .cafe-text, .tville-text {
+        margin-left: 10px;
+        margin-top: 10px;
+    }
+
+    .tville-hours {
+        padding: 0;
+    }
+
+    .tville-info p:first-child {
+        margin-bottom: 0;
+    }
 }
 
 /* 
@@ -689,7 +742,7 @@ DESKTOP STYLES
         margin-top: 15px;
     }
 
-    iframe {
+    #iframe-bham-home, #iframe-tville-home{
         width: 50%;
     }
 
