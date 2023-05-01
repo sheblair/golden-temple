@@ -228,7 +228,7 @@ main {
     align-items: center;
 }
 
-.hero-text-upper, .hero-text-lower {
+.hero-text-upper {
     line-height: 1.8rem;
 }
 
@@ -237,6 +237,12 @@ main {
     max-width: 100%;
     border-radius: 5px;
     margin: 25px 0;
+}
+
+.hero-text-lower {
+    font-size: .9rem;
+    margin: 10px 0;
+    line-height: 1.3rem;
 }
 
 .contact {
@@ -256,12 +262,20 @@ main {
     font-weight: bold;
 }
 
+.store-title {
+    text-decoration: underline;
+}
+
 .contact-container {
     padding: 25px;
 }
 
-.location-bham, .location-tville {
+.location-bham{
     margin-top: 15px;
+}
+
+.location-tville {
+    margin-top: 25px;
 }
 
 .location-bham p, .location-tville p {
@@ -483,7 +497,7 @@ TABLET STYLES
         align-items: center;
     }
 
-    .hero-text-lower, .hero-text-upper {
+    .hero-text-upper {
         font-size: 1.3rem;
         width: 90%;
     }
@@ -491,6 +505,15 @@ TABLET STYLES
     .hero-img-upper {
         width: 90%;
         max-width: 90%;
+    }
+
+    .hero-text-lower-container {
+        width: 90%;
+    }
+
+    .hero-text-lower {
+        font-size: 1rem;
+        line-height: 1.5rem;
     }
 
     .contact {
@@ -690,31 +713,29 @@ DESKTOP STYLES
         justify-content: space-between;
     }
 
-    .hero-area-lower {
-        margin-top: 50px;
-    }
-
-    .hero-text-upper, .hero-text-lower {
-        line-height: 2.5rem;
-        font-size: 1.5rem;
-        padding: 20px;
-        width: 50%;
-    }
-
     .hero-text-upper {
+        line-height: 2rem;
+        font-size: 1.3rem;
+        width: 50%;
         align-self: flex-start;
-        margin-top: 140px;
-    }
-    
-    .hero-text-lower {
-        align-self: flex-end;
-        text-align: right;
-        margin-bottom: 80px;
+        margin-top: 80px;
     }
 
     .hero-img-upper {
         align-self: flex-end;
         width: 45%;
+    }
+
+    .hero-area-lower {
+        margin-top: 140px;
+    }
+
+    .hero-text-lower-container {
+        width: 45%;
+    }
+
+    .hero-text-lower {
+        margin: 30px 0;
     }
 
     .hero-img-lower {
