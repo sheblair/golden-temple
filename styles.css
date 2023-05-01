@@ -438,6 +438,39 @@ LOCATIONS - MOBILE
 *
 *
 *
+GROCERY - MOBILE 
+*
+*
+*
+*/
+
+.grocery-title {
+    font-size: 1rem;
+    line-height: 2rem;
+}
+
+.grocery-container {
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.grocery-img {
+    width: 100%;
+    max-width: 100%;
+    margin: 15px 0;
+}
+
+.grocery-text {
+    margin: 15px 0;
+}
+
+
+/* 
+*
+*
+*
 *
 *
 *
@@ -840,4 +873,45 @@ DESKTOP STYLES
         margin: 0; 
         padding: 10px 5px 5px 5px; 
     }
+
+     /* GROCERY - DESKTOP */
+     .grocery-title {
+        margin: 30px 0;
+     }
+     
+     .grocery-grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        gap: 30px;
+        align-items: stretch;
+     }
+
+     .grocery-grid div:first-child {
+        grid-column-start: 1;
+        grid-column-end: 3;
+        grid-row-start: 1;
+        grid-row-end: 2;
+     }
+
+     .grocery-grid div:nth-child(2) {
+        grid-column-start: 1;
+        grid-column-end: 2;
+        grid-row-start: 2;
+        grid-row-end: 3;
+     }
+
+     .grocery-grid div:nth-child(3) {
+        grid-column-start: 3;
+        grid-column-end: 4;
+        grid-row-start: 1;
+        grid-row-end: 2;
+     }
+
+     .grocery-grid div:nth-child(4) {
+        grid-column-start: 2;
+        grid-column-end: 4;
+        grid-row-start: 2;
+        grid-row-end: 3;
+     }
 }
