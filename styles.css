@@ -697,6 +697,7 @@ TABLET STYLES
     .grocery-intro {
         margin-bottom: 30px;
         align-self: flex-start;
+    }
 
     .grocery-grid {
         display: grid;
