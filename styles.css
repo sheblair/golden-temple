@@ -450,7 +450,6 @@ GROCERY - MOBILE
 }
 
 .grocery-container {
-    width: 90%;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -650,19 +649,23 @@ TABLET STYLES
     .bham-left, .tville-left {
         display: flex;
         flex-direction: column;
-        align-items: center;
+        align-items: flex-start;
     }
 
-     .bham-img, .tville-img {
+     .bham-img {
         width: 90%;
         max-width: 90%;
+    }
+
+    .tville-img {
+        width: 80%;
+        max-width: 80%;
     }
 
     #birmingham-main, #trussville-main {
         display: flex;
         flex-direction: column;
         align-items: center;
-        width: 90%;
     }
 
     .bham-description, .tville-description {
