@@ -444,7 +444,7 @@ GROCERY - MOBILE
 *
 */
 
-.grocery-title {
+.grocery-intro {
     font-size: 1rem;
     line-height: 2rem;
 }
@@ -466,6 +466,38 @@ GROCERY - MOBILE
     margin: 15px 0;
 }
 
+/* 
+*
+*
+*
+SUPPLEMENT - MOBILE 
+*
+*
+*
+*/
+#supplement-main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.page-heading {
+    align-self: flex-start;
+    margin-bottom: 20px;
+}
+
+.supplement-img {
+    width: 100%;
+    max-width: 100%;
+}
+
+.supplement-intro {
+    margin: 20px 0;
+}
+
+.supplement-text {
+    margin: 20px 0;
+}
 
 /* 
 *
@@ -662,11 +694,9 @@ TABLET STYLES
     }
 
     /* GROCERY - TABLET */
-    .grocery-title {
+    .grocery-intro {
         margin-bottom: 30px;
-        text-align: center;
-        width: 80%;
-    }
+        align-self: flex-start;
 
     .grocery-grid {
         display: grid;
@@ -914,7 +944,7 @@ DESKTOP STYLES
     }
 
      /* GROCERY - DESKTOP */
-     .grocery-title {
+     .grocery-intro {
         margin: 30px 0;
      }
      
@@ -953,4 +983,19 @@ DESKTOP STYLES
         grid-row-start: 2;
         grid-row-end: 3;
      }
+
+     /* SUPPLEMENT - DESKTOP */
+     .supplement-container {
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: space-between;
+     }
+
+     .supplement-section {
+        display: flex;
+        flex-direction: column;
+        margin: 20px 0;
+        width: 45%;
+     }
+
 }
