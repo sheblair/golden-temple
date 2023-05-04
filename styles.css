@@ -44,6 +44,10 @@ header, footer {
     text-transform: uppercase;
 }
 
+.bold {
+    font-weight: bold;
+}
+
 .accent-font {
     font-family: 'Preahvihear', sans-serif; ;
 }
@@ -496,6 +500,116 @@ SUPPLEMENT - MOBILE
 
 .supplement-text {
     margin: 20px 0;
+}
+
+/* 
+*
+*
+*
+SERVICES - MOBILE 
+*
+*
+*
+*/
+#yoga, #massage, #tarot, #events {
+    width: 100%;
+    margin-bottom: 30px;
+}
+
+#services-menu {
+    margin-top: 30px;
+}
+
+#services-menu ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: space-between;
+}
+
+#services-menu ul li {
+    padding: 5px 10px;
+    background-color: var(--forest-green);
+    border-radius: 5px;
+}
+
+#services-menu ul li a {
+    color: var(--deep-gold);
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+.services-divider {
+    width: 100%;
+    height: 50px;
+    background-color: var(--deep-gold);
+    border-radius: 5px;
+    margin: 30px 0;
+}
+
+.services-heading {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid black;
+    padding-bottom: 10px;
+}
+
+.services-heading a {
+    text-decoration: none;
+    color: black;
+}
+
+.services-intro {
+    margin-bottom: 15px;
+    padding: 15px 0;
+}
+
+#yoga-intro, #tarot-intro {
+    border-bottom: 1px solid black;
+}
+
+.practitioner-section p {
+    padding: 5px 0;
+}
+
+.services-intro p {
+    line-height: 1.4rem;
+}
+
+.yoga-schedule {
+    border-bottom: 1px solid black;
+    margin-bottom: 15px;
+}
+
+.schedule-section {
+    margin: 15px 0;
+}
+
+.practitioner-section {
+    margin-bottom: 30px;
+}
+
+.yoga-img, .massage-img, .tarot-img {
+    width: 100%;
+    max-width: 100%;
+    margin: 15px 0;
+}
+
+#massage-intro {
+    margin-bottom: 0;
+}
+
+p.dan-heading, p.dan-schedule {
+    padding: 0;
+}
+
+.dan-subsection {
+    margin-top: 10px;
+}
+
+.dan-subsection > p {
+    padding: 0;
 }
 
 /* 
