@@ -847,8 +847,61 @@ TABLET STYLES
         grid-column: 2 / 3;
         grid-row: 3 / 4;
     }
-}
 
+    /* SERVICES - TABLET */
+    .yoga-img, .massage-img, .tarot-img {
+        width: 45%;
+        max-width: 45%;
+    }
+
+    #yoga > .practitioner-section {
+        display: flex;
+    }
+
+    .practitioner-section-text {
+        margin-left: 20px;
+        margin-top: 10px;
+    }
+
+    .michele-intro {
+        display: flex;
+        align-items: center;
+    }
+
+    .michele-intro-text {
+        margin-left: 20px;
+    }
+
+    .michele-images {
+        display: flex;
+        justify-content: center;
+    }
+
+    .michele-images img:nth-child(2) {
+        margin-left: 20px;
+    }
+
+    .michele-quote {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .michele-quote p {
+        width: 60%;
+        text-align: center;
+    }
+
+    .dan-info {
+        display: flex;
+        align-items: center;
+    }
+    
+    .dan-info-text {
+        width: 50%;
+        margin-left: 20px;
+    }
+}
 /* 
 *
 *
