@@ -849,12 +849,20 @@ TABLET STYLES
     }
 
     /* SERVICES - TABLET */
+    #services-main {
+        margin-top: 30px; 
+    }
+
+    #services-menu ul {
+        justify-content: space-evenly;
+    }
+
     .yoga-img, .massage-img, .tarot-img {
         width: 45%;
         max-width: 45%;
     }
 
-    #yoga > .practitioner-section {
+    .yoga-content-section > .practitioner-section {
         display: flex;
     }
 
@@ -875,10 +883,16 @@ TABLET STYLES
     .michele-images {
         display: flex;
         justify-content: center;
+        margin: 20px 0;
     }
 
     .michele-images img:nth-child(2) {
-        margin-left: 20px;
+        margin: 0 20px;
+    }
+
+    .michele-images img {
+        width: 30%;
+        max-width: 30%;
     }
 
     .michele-quote {
@@ -888,8 +902,12 @@ TABLET STYLES
     }
 
     .michele-quote p {
-        width: 60%;
+        width: 80%;
         text-align: center;
+    }
+
+    #massage {
+        margin-bottom: 60px;
     }
 
     .dan-info {
@@ -900,6 +918,17 @@ TABLET STYLES
     .dan-info-text {
         width: 50%;
         margin-left: 20px;
+    }
+
+    #events {
+        margin-bottom: 0;
+    }
+
+    #events-intro p:nth-child(2) {
+        text-align: center;
+        font-size: 1.3rem;
+        font-weight: bold;
+        margin-top: 20px;
     }
 }
 /* 
@@ -1169,4 +1198,102 @@ DESKTOP STYLES
         width: 45%;
      }
 
+     /* SERVICES - DESKTOP */
+     .yoga-content-section {
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: space-between;
+        align-items: flex-start;
+     }
+
+     #yoga-intro, .yoga-schedule {
+        border-bottom: 0;
+        margin-top: 15px;
+     }
+
+     #yoga-intro {
+        width: 40%;
+     }
+
+     .yoga-schedule {
+        width: 40%;
+     }
+
+     .class-schedule {
+        display: none;
+     }
+
+     #teachers {
+        justify-content: flex-start;
+        align-items: flex-start;
+     }
+
+     #teachers > .practitioner-section {
+        width: 48%;
+        display: flex;
+        flex-direction: column;
+     }
+
+     #teachers div:first-child, #teachers div:nth-child(3) {
+        margin-right: 45px;
+     }
+
+     .practitioner-section-text {
+        margin-left: 0;
+     }
+
+     .yoga-img, .tarot-img {
+        width: 100%;
+        max-width: 100%;
+     }
+
+     .michele-container {
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: center;
+        align-items: center;
+     }
+
+     .massage-img {
+        width: 30%;
+        max-width: 30%;
+     }
+
+     .michele-intro {
+        align-items: flex-start;
+     }
+
+     .michele-intro-text {
+        margin-top: 15px;
+        width: 60%;
+     }
+
+     .michele-images {
+        width: 100%;
+        justify-content: center;
+     }
+
+     .michele-images img {
+        width: 100%;
+     }
+
+     .michele-quote p {
+        width: 60%;
+     }
+
+     #tarot > .practitioner-section {
+        width: 100%;
+     }
+
+     .tarot-img {
+        width: 50%;
+     }
+
+     .dan-info {
+        align-items: flex-start;
+     }
+
+     .dan-info-text {
+        margin-top: 15px;
+     }
 }
