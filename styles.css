@@ -612,6 +612,17 @@ p.dan-heading, p.dan-schedule {
     padding: 0;
 }
 
+#events-intro p:nth-child(2) {
+    text-align: center;
+    font-size: 1.1rem;
+    font-weight: bold;
+    margin-top: 20px;
+}
+
+#events {
+    margin-bottom: 0;
+}
+
 /* 
 *
 *
@@ -920,15 +931,8 @@ TABLET STYLES
         margin-left: 20px;
     }
 
-    #events {
-        margin-bottom: 0;
-    }
-
     #events-intro p:nth-child(2) {
-        text-align: center;
         font-size: 1.3rem;
-        font-weight: bold;
-        margin-top: 20px;
     }
 }
 /* 
@@ -1199,6 +1203,10 @@ DESKTOP STYLES
      }
 
      /* SERVICES - DESKTOP */
+     #services-top p {
+        margin-bottom: 50px;
+     }
+
      .yoga-content-section {
         display: flex;
         flex-flow: row wrap;
