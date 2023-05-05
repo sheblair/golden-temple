@@ -48,6 +48,14 @@ header, footer {
     font-weight: bold;
 }
 
+.align-right {
+    text-align: right;
+}
+
+.align-center {
+    text-align: center;
+}
+
 .accent-font {
     font-family: 'Preahvihear', sans-serif; ;
 }
@@ -632,13 +640,46 @@ CAFE - MOBILE
 *
 *
 */
+#cafe-main h2 {
+    margin-bottom: 0;
+}
+
+.cafe-main-info, .cafe-description {
+    margin: 20px 0;
+    padding: 0 10px;
+    border-radius: 5px;
+    background-color: var(--deep-gold   );
+}
+
+.cafe-description p, .cafe-main-info p {
+    margin: 10px 0;
+}
+
 .cafe-img {
     width: 100%;
     max-width: 100%;
 }
 
+.menu {
+    width: 100%;
+    margin-top: 40px;
+}
+
+.menu-heading {
+    margin: 20px 0;
+    text-align: center;
+}
+
+.menu-heading a {
+    color: black;
+}
+
+.main-menu {
+    margin-top: 30px;
+}
+
 .accordion {
-    background-color: #eee;
+    background-color: var(--light-yellow);
     color: #444;
     cursor: pointer;
     padding: 18px;
@@ -647,31 +688,135 @@ CAFE - MOBILE
     border: none;
     outline: none;
     transition: 0.4s;
+    font-family: 'Nokora', sans-serif;
+    font-size: .875rem;
   }
   
   /* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
   .active, .accordion:hover {
-    background-color: #ccc;
+    background-color: var(--deep-gold);
   }
   
   /* Style the accordion panel. Note: hidden by default */
   .panel {
     padding: 0 18px;
-    background-color: white;
-    display: none;
+    background-color: var(--deep-gold);
+    max-height: 0;
     overflow: hidden;
+    transition: max-height 0.2s ease-out;
+    margin-bottom: 10px;
   }
 
   .accordion:after {
     content: '\02795'; /* Unicode character for "plus" sign (+) */
     font-size: 13px;
-    color: #777;
+    color: black;
     float: right;
     margin-left: 5px;
   }
   
   .active:after {
     content: "\2796"; /* Unicode character for "minus" sign (-) */
+  }
+
+  .panel-item {
+    font-size: .875rem;
+    display: flex;
+    justify-content: space-between;
+    padding: 15px 0;
+  }
+
+  #daily-special-panel {
+    flex-direction: column;
+  }
+
+  #daily-special-panel p:first-child {
+    margin-bottom: 5px;
+    font-weight: bold;
+  }
+
+  #salad-panel .panel-item, #specialties-panel .panel-item,
+  #sandwiches-panel .panel-item, #kids-panel .panel-item, 
+  #smoothies-panel .panel-item {
+    flex-direction: column;
+  }
+
+  #kids-panel .panel-item:last-of-type {
+    flex-direction: row;
+  }
+
+  #salad-panel .panel-item .prices {
+    display: flex;
+    margin: 10px 0;
+  }
+
+  #salad-panel .panel-item .prices p, 
+  #carrot-juice .prices p,
+  #smoothies-panel .panel-item .prices p {
+    margin-right: 5px;
+  }
+
+  #salad-panel .panel-item .prices p:nth-child(2),
+  #carrot-juice .prices p:nth-child(2), 
+  #carrot-juice .prices p:nth-child(4),
+  #smoothies-panel .panel-item .prices p:nth-child(2),
+  #smoothies-panel .panel-item .prices p:nth-child(4)  {
+    margin-right: 15px;
+  }
+
+  .panel-item-heading {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 10px;
+  }
+
+  .panel-item-heading p {
+    font-weight: bold;
+  }
+
+  #carrot-juice {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .carrot-juice-heading {
+    font-weight: bold;
+    align-self: center;
+    border-bottom: 1px solid black;
+    margin-bottom: 10px;
+  }
+
+  #carrot-juice .prices,
+  #smoothie-prices {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-bottom: 10px;
+  }
+
+  .smoothie-heading {
+    font-size: .875rem;
+    font-style: italic;
+  }
+
+  #smoothie-prices .prices {
+    display: flex;
+    justify-content: center;
+  }
+
+  .smoothie-section-heading {
+    font-weight: bold;
+    margin-bottom: 5px;
+  }
+
+  .back-to-top p {
+    margin-top: 20px;
+  }
+
+  .back-to-top a {
+    text-decoration: none;
+    color: black;
   }
 
 /* 
