@@ -24,3 +24,9 @@ for (i = 0; i < acc.length; i++) {
 
   });
 }
+
+// update copyright year to current year
+const copyright = document.querySelector(".copyright");
+const currentYear = new Date().getFullYear();
+
+copyright.innerHTML = `<p>© ${currentYear} Golden Temple Natural Grocery and Cafe <br>All Rights Reserved.</p>`;

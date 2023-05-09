@@ -931,7 +931,7 @@ TABLET STYLES
     }
 
     .home-hero-area {
-        background: url('img/img-home/background-flower-1-paler.png');
+        background: url('img/img-home/GT_flower-pale.png');
         background-size: contain;
         background-repeat: no-repeat;
     }
@@ -943,17 +943,23 @@ TABLET STYLES
     }
 
     .hero-text-upper {
-        font-size: 1.3rem;
-        width: 90%;
+        font-size: 1.2rem;
+        padding: 30px;
+        border-radius: 5px;
     }
 
+    .hero-text-upper, .hero-text-lower-container {
+        width: 100%;
+    }
+    
     .hero-img-upper {
-        width: 90%;
-        max-width: 90%;
+        width: 80%;
+        max-width: 80%;
     }
 
     .hero-text-lower-container {
-        width: 90%;
+        padding: 0 30px;
+        border-radius: 5px;
     }
 
     .hero-text-lower {
@@ -1318,7 +1324,7 @@ DESKTOP STYLES
     
     .hero-area-upper, .hero-area-lower {
         border-radius: 10px;
-        width: 90%;
+        width: 100%;
         display: flex;
         flex-flow: row wrap;
         justify-content: space-between;
@@ -1326,7 +1332,7 @@ DESKTOP STYLES
 
     .hero-text-upper {
         line-height: 2rem;
-        font-size: 1.3rem;
+        font-size: 1.1rem;
         width: 50%;
         align-self: flex-start;
         margin-top: 80px;
@@ -1342,7 +1348,7 @@ DESKTOP STYLES
     }
 
     .hero-text-lower-container {
-        width: 45%;
+        width: 48%;
     }
 
     .hero-text-lower {
@@ -1393,7 +1399,7 @@ DESKTOP STYLES
     }
 
     .social-media-icons i {
-        font-size: 1.5rem;
+        font-size: 2rem;
     }
 
     .social-media-icons {
