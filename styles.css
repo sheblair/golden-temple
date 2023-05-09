@@ -700,7 +700,7 @@ CAFE - MOBILE
     background-color: var(--deep-gold);
     padding: 15px;
     margin: 15px 0;
-    font-size: .8rem;
+    font-size: .9rem;
 }
 
 .cafe-div p:has(+ img) {
@@ -736,7 +736,7 @@ CAFE - MOBILE
 
 .accordion {
     background-color: var(--light-yellow);
-    color: #444;
+    color: black;
     cursor: pointer;
     padding: 18px;
     width: 100%;
@@ -1192,30 +1192,9 @@ TABLET STYLES
     }
 
     /* CAFE - TABLET */
-    /* #cafe-main {
-        align-items: flex-start;
-        flex-flow: row wrap;
-        justify-content: space-between;
-    } */
-
-    .cafe-main-info {
-        display: flex;
-        justify-content: flex-start;
-        align-items: flex-start;
-    }
-
-    .cafe-main-info .cafe-div {
-        width: 40%;
-        margin-right: 30px;
-        margin-top: 20px;
-    }
-
-    .cafe-main-info img {
-        width: 55%;
-    }
-
     .cafe-div {
         margin: 0;
+        font-size: 1rem;
     }
     
     .cafe-div-container {
@@ -1223,6 +1202,7 @@ TABLET STYLES
         grid-template-columns: 1fr 1fr;
         gap: 20px;
         margin-top: 30px;
+        justify-items: center;
     }
 
     .cafe-div-container div:first-child {
@@ -1475,7 +1455,7 @@ DESKTOP STYLES
      /* GROCERY - DESKTOP */
      .grocery-intro {
         margin: 30px 0;
-     }
+    }
      
      .grocery-grid {
         display: grid;
@@ -1483,150 +1463,225 @@ DESKTOP STYLES
         grid-template-rows: 1fr 1fr;
         gap: 30px;
         align-items: stretch;
-     }
+    }
 
      .grocery-grid div:first-child {
         grid-column-start: 1;
         grid-column-end: 3;
         grid-row-start: 1;
         grid-row-end: 2;
-     }
+    }
 
      .grocery-grid div:nth-child(2) {
         grid-column-start: 1;
         grid-column-end: 2;
         grid-row-start: 2;
         grid-row-end: 3;
-     }
+    }
 
      .grocery-grid div:nth-child(3) {
         grid-column-start: 3;
         grid-column-end: 4;
         grid-row-start: 1;
         grid-row-end: 2;
-     }
+    }
 
      .grocery-grid div:nth-child(4) {
         grid-column-start: 2;
         grid-column-end: 4;
         grid-row-start: 2;
         grid-row-end: 3;
-     }
+    }
 
      /* SUPPLEMENT - DESKTOP */
      .supplement-container {
         display: flex;
         flex-flow: row wrap;
         justify-content: space-between;
-     }
+    }
 
      .supplement-section {
         display: flex;
         flex-direction: column;
         margin: 20px 0;
         width: 45%;
-     }
+    }
 
      /* SERVICES - DESKTOP */
      #services-top p {
         margin-bottom: 50px;
-     }
+    }
 
      .yoga-content-section {
         display: flex;
         flex-flow: row wrap;
         justify-content: space-between;
         align-items: flex-start;
-     }
+    }
 
      #yoga-intro, .yoga-schedule {
         border-bottom: 0;
         margin-top: 15px;
-     }
+    }
 
      #yoga-intro {
         width: 40%;
-     }
+    }
 
      .yoga-schedule {
         width: 40%;
-     }
+    }
 
      .class-schedule {
         display: none;
-     }
+    }
 
      #teachers {
         justify-content: flex-start;
         align-items: flex-start;
-     }
+    }
 
      #teachers > .practitioner-section {
         width: 47%;
         display: flex;
         flex-direction: column;
-     }
+    }
 
      #teachers div:first-child, #teachers div:nth-child(3) {
         margin-right: 45px;
-     }
+    }
 
      .practitioner-section-text {
         margin-left: 0;
-     }
+    }
 
      .yoga-img, .tarot-img {
         width: 100%;
         max-width: 100%;
-     }
+    }
 
      .michele-container {
         display: flex;
         flex-flow: row wrap;
         justify-content: center;
         align-items: center;
-     }
+    }
 
      .massage-img {
         width: 30%;
         max-width: 30%;
-     }
+    }
 
      .michele-intro {
         align-items: flex-start;
-     }
+    }
 
      .michele-intro-text {
         margin-top: 15px;
         width: 60%;
-     }
+    }
 
      .michele-images {
         width: 100%;
         justify-content: center;
-     }
+    }
 
      .michele-images img {
         width: 100%;
-     }
+    }
 
      .michele-quote p {
         width: 60%;
-     }
+    }
 
      #tarot > .practitioner-section {
         width: 100%;
-     }
+    }
 
      .tarot-img {
         width: 50%;
-     }
+    }
 
      .dan-info {
         align-items: flex-start;
-     }
+    }
 
      .dan-info-text {
         margin-top: 15px;
-     }
+    }
+
+    /* CAFE - DESKTOP */
+    #cafe-main {
+        align-items: center;
+    }
+
+    .cafe-main-info {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: flex-start;
+    }
+
+    .cafe-main-info .cafe-div {
+        margin-top: 20px;
+        width: 40%;
+        font-size: 1.rem;
+    }
+
+    .cafe-main-info img {
+        width: 55%;
+    }
+
+    .cafe-div {
+        display: flex;
+        justify-content: space-between;
+        padding: 30px;
+        font-size: 1rem;
+    }
+
+    .cafe-div-container .cafe-div:first-child {
+        flex-flow: row wrap;
+    }
+
+    .cafe-div-container .cafe-div:first-child p {
+        width: 45%;
+    }
+
+    .cafe-div-container .cafe-div:first-child img {
+        width: 50%;
+    }
+
+    .cafe-div-container .cafe-div:last-child img:last-child {
+        width: 100%;
+    }
+
+    .cafe-div-container .cafe-div:nth-child(3),
+    .cafe-div-container .cafe-div:nth-child(2) {
+        flex-direction: column;
+    }
+
+    .cafe-div-container .cafe-div:nth-child(2),
+    .cafe-div-container .cafe-div:last-child {
+        width: 85%;
+    }
+
+    .cafe-div p:has(+ img) {
+        margin-bottom: 20px;
+    }
+    
+    .cafe-div img:has(+ p) {
+        margin-bottom: 20px;
+    }
+
+    #menu {
+        width: 80%;
+    }
+
+    #menu button {
+        font-size: 1rem;
+    }
+
+    #menu .panel * {
+        font-size: 1rem;
+    }
 }
