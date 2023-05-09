@@ -640,19 +640,74 @@ CAFE - MOBILE
 *
 *
 */
+#cafe-main {
+    align-items: flex-start;
+}
+
 #cafe-main h2 {
     margin-bottom: 0;
 }
 
-.cafe-main-info, .cafe-description {
-    margin: 20px 0;
-    padding: 0 10px;
-    border-radius: 5px;
-    background-color: var(--deep-gold   );
+.cafe-main-info {
+    margin-top: 20px;
 }
 
-.cafe-description p, .cafe-main-info p {
-    margin: 10px 0;
+.cafe-main-info > .cafe-div {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.cafe-main-info .cafe-div p, 
+.cafe-main-info .cafe-div a {
+    margin: 5px 0;
+    color: black;
+}
+
+.cafe-main-info .cafe-div p {
+    padding-left: 5px;
+}
+
+.cafe-main-info .cafe-div p:nth-child(3) {
+    padding-left: 0;
+}
+
+.cafe-main-info .cafe-div a {
+    color: black;
+    padding: 5px;
+}
+
+.cafe-main-info .cafe-div a:hover {
+    color: var(--deep-gold);
+    background-color: var(--forest-green);
+    border-radius: 5px;
+}
+
+.cafe-main-info .cafe-div p:nth-child(2),
+.cafe-main-info .cafe-div p:nth-child(4) {
+    margin-bottom: 0;
+    margin-top: 10px;
+}
+
+.cafe-img-hero {
+    width: 100%;
+    max-width: 100%;
+    margin: 20px 0;
+}
+
+.cafe-div {
+    border-radius: 5px;
+    background-color: var(--deep-gold);
+    padding: 15px;
+    margin: 15px 0;
+}
+
+.cafe-div p {
+    margin-bottom: 10px;
+}
+
+.cafe-div img:has(+ p) {
+    margin-bottom: 10px;
 }
 
 .cafe-img {
@@ -660,7 +715,7 @@ CAFE - MOBILE
     max-width: 100%;
 }
 
-.menu {
+#menu {
     width: 100%;
     margin-top: 40px;
 }
@@ -808,6 +863,10 @@ CAFE - MOBILE
   .smoothie-section-heading {
     font-weight: bold;
     margin-bottom: 5px;
+  }
+
+  .back-to-top {
+    align-self: center;
   }
 
   .back-to-top p {

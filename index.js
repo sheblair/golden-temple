@@ -1,3 +1,4 @@
+// hide and show panels in cafe accordion menu
 const acc = document.getElementsByClassName("accordion");
 let i;
 
