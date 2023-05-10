@@ -474,7 +474,7 @@ GROCERY - MOBILE
 }
 
 .grocery-text {
-    margin: 15px 0;
+    margin-bottom: 15px;
 }
 
 /* 
@@ -1094,14 +1094,19 @@ TABLET STYLES
 
     .grocery-grid {
         display: grid;
-        grid-template-columns: 1fr 1fr;
-        grid-template-rows: 1fr 1fr 1fr;
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+        grid-template-rows: repeat(auto-fit, minmax(300px, 1fr));
         gap: 20px;
         align-items: center;
     }
 
     .grocery-text {
         font-size: .8rem;
+        margin: 0;
+    }
+
+    .grocery-img {
+        margin: 0;
     }
 
     .grocery-grid div:first-child {
@@ -1469,13 +1474,16 @@ DESKTOP STYLES
      .grocery-intro {
         margin: 30px 0;
     }
+
+    .grocery-text {
+        font-size: 1rem;
+    }
      
      .grocery-grid {
         display: grid;
-        grid-template-columns: 1fr 1fr 1fr;
-        grid-template-rows: 1fr 1fr;
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+        grid-template-rows: repeat(auto-fit, minmax(350px, 1fr));
         gap: 30px;
-        align-items: stretch;
     }
 
      .grocery-grid div:first-child {
