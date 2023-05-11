@@ -544,34 +544,21 @@ GROCERY - MOBILE
 *
 *
 */
-
-.grocery-intro {
-    font-size: 1rem;
-    line-height: 2rem;
-}
-
-.grocery-container {
+#grocery-main {
     display: flex;
     flex-direction: column;
-    align-items: center;
-}
-
-.grocery-section {
-    background-color: var(--deep-gold);
-    border-radius: 5px;
-    padding: 10px;
-    margin: 10px 0;
-}
-
-.grocery-img {
-    width: 100%;
-    max-width: 100%;
-    margin: 15px 0;
+    flex: 1;
 }
 
 .grocery-text {
-    margin-bottom: 15px;
+    align-self: flex-start;
+    padding: 10px 0;
 }
+
+#grocery-main .page-heading {
+    margin-bottom: 0;
+}
+
 
 /* 
 *
@@ -1169,47 +1156,7 @@ TABLET STYLES
     }
 
     /* GROCERY - TABLET */
-    .grocery-intro {
-        margin-bottom: 30px;
-        align-self: flex-start;
-    }
-
-    .grocery-grid {
-        display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-        grid-template-rows: repeat(auto-fit, minmax(300px, 1fr));
-        gap: 20px;
-        align-items: center;
-    }
-
-    .grocery-text {
-        font-size: .8rem;
-        margin: 0;
-    }
-
-    .grocery-img {
-        margin: 0;
-    }
-
-    .grocery-grid div:first-child {
-        grid-column: 1 / 2;
-        grid-row: 1 / 2;
-    }
-
-    .grocery-grid div:nth-child(2) {
-        grid-column: 2 / 3;
-        grid-row: 1 / 3;
-    }
-
-    .grocery-grid div:nth-child(3) {
-        grid-column: 1 / 2;
-        grid-row: 2 / 4;
-    }
-
-    .grocery-grid div:nth-child(4) {
-        grid-column: 2 / 3;
-        grid-row: 3 / 4;
-    }
+    
 
     /* SERVICES - TABLET */
     #services-main {
@@ -1368,7 +1315,8 @@ DESKTOP STYLES
     /* SLIDESHOW - DESKTOP */
     .slideshow-container {
         width: 80%;
-        max-width: 90%;
+        max-width: 80%;
+        margin-top: 50px;
     }
 
     .prev, .next {
@@ -1574,48 +1522,7 @@ DESKTOP STYLES
     }
 
      /* GROCERY - DESKTOP */
-     .grocery-intro {
-        margin: 30px 0;
-    }
-
-    .grocery-text {
-        font-size: 1rem;
-    }
-     
-     .grocery-grid {
-        display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-        grid-template-rows: repeat(auto-fit, minmax(350px, 1fr));
-        gap: 30px;
-    }
-
-     .grocery-grid div:first-child {
-        grid-column-start: 1;
-        grid-column-end: 3;
-        grid-row-start: 1;
-        grid-row-end: 2;
-    }
-
-     .grocery-grid div:nth-child(2) {
-        grid-column-start: 1;
-        grid-column-end: 2;
-        grid-row-start: 2;
-        grid-row-end: 3;
-    }
-
-     .grocery-grid div:nth-child(3) {
-        grid-column-start: 3;
-        grid-column-end: 4;
-        grid-row-start: 1;
-        grid-row-end: 2;
-    }
-
-     .grocery-grid div:nth-child(4) {
-        grid-column-start: 2;
-        grid-column-end: 4;
-        grid-row-start: 2;
-        grid-row-end: 3;
-    }
+    
 
      /* SUPPLEMENT - DESKTOP */
      .supplement-container {
