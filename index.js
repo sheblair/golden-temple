@@ -30,3 +30,56 @@ const copyright = document.querySelector(".copyright");
 const currentYear = new Date().getFullYear();
 
 copyright.innerHTML = `<p>© ${currentYear} Golden Temple Natural Grocery and Cafe <br>All Rights Reserved.</p>`;
+
+
+// slideshow of images on boutique page
+let slideIndex = 0;
+const slideshowImages = document.getElementsByClassName("slideshow-image");
+const prevBtn = document.querySelector(".prev");
+const nextBtn = document.querySelector(".next");
+
+showSlides();
+
+function showSlides() {
+  for (let i = 0; i < slideshowImages.length; i++) {
+    slideshowImages[i].classList.remove("fade", "slideshow-active");
+  }
+
+  slideIndex++;
+
+  if (slideIndex > slideshowImages.length) {
+    slideIndex = 1;
+  }
+
+  slideshowImages[slideIndex - 1].classList.add("fade", "slideshow-active");
+
+  setTimeout(showSlides, 5000);
+}
+
+prevBtn.addEventListener("click", () => {
+  slideIndex--;
+
+  if (slideIndex < 1) {
+    slideIndex = slideshowImages.length;
+  }
+
+  for (let i = 0; i < slideshowImages.length; i++) {
+    slideshowImages[i].classList.remove("fade", "slideshow-active");
+  }
+
+  slideshowImages[slideIndex - 1].classList.add("fade", "slideshow-active");
+});
+
+nextBtn.addEventListener("click", () => {
+  slideIndex++;
+
+  if (slideIndex > slideshowImages.length) {
+    slideIndex = 1;
+  }
+
+  for (let i = 0; i < slideshowImages.length; i++) {
+    slideshowImages[i].classList.remove("fade", "slideshow-active");
+  }
+
+  slideshowImages[slideIndex - 1].classList.add("fade", "slideshow-active");
+});
