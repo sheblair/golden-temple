@@ -29,7 +29,7 @@ for (i = 0; i < acc.length; i++) {
 const copyright = document.querySelector(".copyright");
 const currentYear = new Date().getFullYear();
 
-copyright.innerHTML = `<p>© ${currentYear} Golden Temple Natural Grocery and Cafe <br>All Rights Reserved.</p>`;
+copyright.innerHTML = `<p>© ${currentYear} Golden Temple Natural Grocery and Cafe</p>`;
 
 
 // slideshow of images on boutique page

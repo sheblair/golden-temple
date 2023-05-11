@@ -289,16 +289,29 @@ footer {
     margin: 0 5px;
 }
 
-.copyright {
+.copyright-container {
     text-align: center;
     margin: 10px 0 0 0;
 }
 
-.copyright > p {
-    font-size: .55rem;
+.footer-credit {
+    margin-bottom: 10px;
+}
+
+.copyright p, .footer-credit {
+    font-size: .65rem;
     font-style: italic;
-    padding-bottom: 10px;
     color: var(--deep-gold)
+}
+
+.footer-credit a {
+    color: var(--deep-gold);
+    text-decoration: none;
+}
+
+.footer-credit a:hover {
+    background-color: var(--light-yellow);
+    color: var(--forest-green);
 }
 
 /*
@@ -423,6 +436,42 @@ iframe {
 .social-media-icons p {
     margin: 0 10px;
     font-size: 1.3rem;
+}
+
+/* 
+*
+*
+*
+ABOUT - MOBILE 
+*
+*
+*
+*/
+.banner {
+    width: 100%;
+    max-width: 100%;
+    background-color: var(--deep-gold);
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.value {
+    background-color: var(--deep-gold);
+    padding: 10px;
+    border-radius: 5px;
+    margin: 10px 0;
+}
+
+.about-heading {
+    margin: 10px 0;
+    font-family: 'Preahvihear', sans-serif;
+    border-bottom: 1px solid black;
+    font-size: 1rem;
+}
+
+.values-heading {
+    margin: 5px 0;
+    font-family: 'Preahvihear', sans-serif;
 }
 
 /* 
