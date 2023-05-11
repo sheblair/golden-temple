@@ -585,7 +585,7 @@ SUPPLEMENT - MOBILE
 #supplement-main {
     display: flex;
     flex-direction: column;
-    align-items: flex-start;
+    flex: 1;
 }
 
 #supplement-main .page-heading {
@@ -599,6 +599,7 @@ SUPPLEMENT - MOBILE
 
 .supplement-text {
     margin: 10px 0;
+    align-self: flex-start;
 }
 
 /* 
@@ -1365,6 +1366,11 @@ DESKTOP STYLES
     }
 
     /* SLIDESHOW - DESKTOP */
+    .slideshow-container {
+        width: 80%;
+        max-width: 90%;
+    }
+
     .prev, .next {
         top: 45%;
         font-size: 2.2rem;
