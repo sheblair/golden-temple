@@ -389,7 +389,7 @@ BOUTIQUE - MOBILE
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: wheat;
+    background-color: black;
   }
   
   .slideshow-image img {
@@ -981,6 +981,10 @@ TABLET STYLES
         display: block;
     }
 
+    .page-heading {
+        font-size: 1.5rem;
+    }
+
     /* HEADER - TABLET */
     .dropdown .dropbtn, .dropdown-content a {
         font-size: .8rem;
@@ -1079,8 +1083,21 @@ TABLET STYLES
         justify-self: flex-end;
     }
 
-   /* BOUTIQUE - TABLET */
-  
+    /* BOUTIQUE - TABLET */
+    .boutique-description {
+        font-size: .975rem;
+    }
+
+    .boutique-bottom-heading {
+        font-size: 1.3rem;
+    }
+
+    .prev, .next {
+        top: 40%;
+        font-size: 1.8rem;
+        padding: 20px;
+    }
+
 
      /* LOCATIONS - BIRMINGHAM AND TRUSSVILLE - TABLET*/
     .bham-left, .tville-left {
@@ -1322,6 +1339,10 @@ DESKTOP STYLES
 */
 
 @media screen and (min-width: 1200px) {
+    .page-heading {
+        font-size: 1.8rem;
+    }
+
     /* HEADER - DESKTOP */
     #mobile-nav {
         display: none;
@@ -1772,5 +1793,19 @@ DESKTOP STYLES
 
     #menu .panel * {
         font-size: 1rem;
+    }
+
+    /* BOUTIQUE - DESKTOP */
+    .boutique-description {
+        font-size: 1rem;
+    }
+       
+       .boutique-bottom-heading {
+        font-size: 1.8rem;
+    }
+       .prev, .next {
+        top: 45%;
+        font-size: 2.2rem;
+        padding: 30px;
     }
 }
