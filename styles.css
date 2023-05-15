@@ -898,6 +898,21 @@ CAFE - MOBILE
     margin-bottom: 10px;
 }
 
+/* over-writing the CSS because :has() is not supported in FireFox as of 5/15/23 */
+.cafe-div-container .cafe-div p {
+    margin: 10px 0;
+}
+
+.cafe-div-container .cafe-div:first-child p {
+    margin-top: 0;
+}
+
+.cafe-div-container .cafe-div:nth-child(3)
+p:last-child {
+    margin-bottom: 0;
+}
+
+
 .cafe-img {
     width: 100%;
     max-width: 100%;
@@ -1335,7 +1350,7 @@ TABLET STYLES
     .cafe-div-container {
         display: grid;
         grid-template-columns: 1fr 1fr;
-        gap: 20px;
+        gap: 15px;
         margin-top: 30px;
         justify-items: center;
     }
@@ -1612,6 +1627,10 @@ DESKTOP STYLES
         margin-right: 20px;
     }
 
+    .tville-img, .tville-description {
+        width: 90%;
+    }
+
     .tville-right, .tville-info {
         display: flex;
         flex-direction: column;
@@ -1824,6 +1843,10 @@ DESKTOP STYLES
     
     .cafe-div img:has(+ p) {
         margin-bottom: 20px;
+    }
+
+    .cafe-div-container .cafe-div:nth-child(2) p {
+        margin: 20px 0;
     }
 
     #menu {
