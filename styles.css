@@ -373,12 +373,26 @@ main {
     font-weight: bold;
 }
 
+.visit-us, .follow-us {
+    font-size: 1.1rem;
+}
+
 .store-title {
     text-decoration: underline;
 }
 
+.store-title a {
+    padding: 5px;
+    border-radius: 5px;
+}
+
+.store-title a:hover {
+    color: var(--deep-gold);
+    background-color: var(--forest-green);
+}
+
 .contact-container {
-    padding: 25px;
+    padding: 15px;
 }
 
 .location-bham {
@@ -406,10 +420,12 @@ iframe {
 
 .address {
     padding-top: 8px;
+    padding-left: 5px;
 }
 
 .phone, .fax, .email {
     padding-top: 2px;
+    padding-left: 5px;
 }
 
 .follow-us {
@@ -424,6 +440,13 @@ iframe {
 
 .social-media a {
     color: black;
+    padding: 5px 5px 0 5px;
+    border-radius: 5px;
+}
+
+.social-media a:hover {
+    color: var(--deep-gold);
+    background-color: var(--forest-green);
 }
 
 .social-media-icons {
@@ -435,7 +458,7 @@ iframe {
 
 .social-media-icons p {
     margin: 0 10px;
-    font-size: 1.3rem;
+    font-size: 1.5rem;
 }
 
 /* 
@@ -465,7 +488,6 @@ ABOUT - MOBILE
 .about-heading {
     margin: 10px 0;
     font-family: 'Preahvihear', sans-serif;
-    border-bottom: 1px solid black;
     font-size: 1rem;
 }
 
@@ -474,7 +496,7 @@ ABOUT - MOBILE
 }
 
 .values-heading {
-    margin: 5px 0;
+    margin: 0 0 5px 0;
     font-family: 'Preahvihear', sans-serif;
 }
 
@@ -511,6 +533,17 @@ BOUTIQUE - MOBILE
     font-size: 1rem;
 }
 
+.boutique-description a {
+    padding: 3px;
+    border-radius: 3px;
+    color: black;
+}
+
+.boutique-description a:hover {
+    color: var(--deep-gold);
+    background-color: var(--forest-green);
+}
+
 /* 
 *
 *
@@ -521,11 +554,13 @@ LOCATIONS - MOBILE
 *
 */
 
-#birmingham-main, #trussville-main {
+.birmingham-main-container, 
+.trussville-main-container {
     align-items: flex-start;
 }
 
-#birmingham-main a, #trussville-main a {
+.birmingham-main-container a, 
+.trussville-main-container a {
     color: black;
 }
 
@@ -740,6 +775,17 @@ SERVICES - MOBILE
     margin-bottom: 0;
 }
 
+.michele-intro-text a {
+    color: black;
+    padding: 3px;
+    border-radius: 3px;
+}
+
+.michele-intro-text a:hover {
+    color: var(--deep-gold);
+    background-color: var(--forest-green);
+}
+
 p.dan-heading, p.dan-schedule {
     padding: 0;
 }
@@ -761,6 +807,17 @@ p.dan-heading, p.dan-schedule {
 
 #events {
     margin-bottom: 0;
+}
+
+#events-intro a {
+    color: black;
+    padding: 5px;
+    border-radius: 5px;
+}
+
+#events-intro a:hover {
+    color: var(--deep-gold);
+    background-color: var(--forest-green);
 }
 
 /* 
@@ -863,6 +920,13 @@ CAFE - MOBILE
 
 .menu-heading a {
     color: black;
+    padding: 5px;
+    border-radius: 5px;
+}
+
+.menu-heading a:hover {
+    color: var(--deep-gold);
+    background-color: var(--forest-green);
 }
 
 .main-menu {
@@ -1042,6 +1106,18 @@ TABLET STYLES
         font-size: .975rem;
     }
 
+    /* PAGE WIDTHS */
+    #home-main {
+        width: 80%;
+    }
+
+    #about-main, #grocery-main, #supplement-main,
+    #boutique-main, #cafe-main, #services-main,
+    #birmingham-main, #trussville-main {
+        width: 80%;
+        margin: 40px 0;
+    }
+
     /* SLIDESHOW - TABLET */
     .prev, .next {
         top: 40%;
@@ -1072,10 +1148,6 @@ TABLET STYLES
     }
 
     /* HOMEPAGE - TABLET */
-    main {
-        margin-top: 80px;
-    }
-
     .home-hero-area {
         background: url('img/img-home/GT_flower-pale.png');
         background-size: contain;
@@ -1088,15 +1160,6 @@ TABLET STYLES
         align-items: center;
     }
 
-    .hero-text-upper, .hero-text-lower-container {
-        width: 90%;
-    }
-    
-    .hero-img-upper, .hero-img-lower {
-        width: 80%;
-        max-width: 80%;
-    }
-
     .hero-text-upper, .hero-text-lower {
         font-size: 1rem;
         line-height: 1.5rem;
@@ -1104,6 +1167,7 @@ TABLET STYLES
 
     .contact {
         margin-top: 50px;
+        width: 80%;
     }
 
     .contact-container {
@@ -1114,7 +1178,6 @@ TABLET STYLES
     }
 
     .visit-us {
-        font-size: 1.2rem;
         margin-left: 20px;
     }
 
@@ -1160,24 +1223,11 @@ TABLET STYLES
         align-items: flex-start;
     }
 
-     .bham-img {
-        width: 90%;
-        max-width: 90%;
-    }
-
-    .tville-img {
-        width: 80%;
-        max-width: 80%;
-    }
-
-    #birmingham-main, #trussville-main {
+    .birmingham-main-container, 
+    .trussville-main-container {
         display: flex;
         flex-direction: column;
         align-items: center;
-    }
-
-    .bham-description, .tville-description {
-        width: 90%;
     }
 
     .bham-info, .cafe-info, .tville-info {
@@ -1205,10 +1255,6 @@ TABLET STYLES
     }    
 
     /* SERVICES - TABLET */
-    #services-main {
-        margin-top: 30px; 
-    }
-
     #services-menu ul {
         justify-content: space-evenly;
     }
@@ -1333,10 +1379,6 @@ TABLET STYLES
     }
 
     /* ABOUT - TABLET */
-    .mission, .values, .banner {
-        width: 90%;
-    }
-
     .mission {
         margin: 30px 0;
     }
@@ -1368,6 +1410,12 @@ DESKTOP STYLES
 
     p {
         font-size: 1rem;
+    }
+
+    #about-main, #grocery-main, #supplement-main,
+    #services-main, #cafe-main, #birmingham-main,
+    #trussville-main {
+        margin: 60px 0;
     }
 
     /* SLIDESHOW - DESKTOP */
@@ -1421,7 +1469,7 @@ DESKTOP STYLES
     }
 
     /* HOMEPAGE - DESKTOP */
-    main {
+    #home-main {
         margin-top: 80px;
         display: flex;
         flex-direction: column;
@@ -1523,7 +1571,8 @@ DESKTOP STYLES
     }
 
     /* LOCATIONS - DESKTOP */
-    #birmingham-main, #trussville-main {
+    .birmingham-main-container, 
+    .trussville-main-container {
         flex-direction: row;
         justify-content: space-between;
     }
@@ -1801,7 +1850,7 @@ DESKTOP STYLES
     /* ABOUT - DESKTOP */
     #about-main {
         flex-flow: row wrap;
-        justify-content: space-evenly;
+        justify-content: space-between;
     }
 
     .about-heading {
@@ -1813,11 +1862,10 @@ DESKTOP STYLES
     }
 
     .mission {
-        width: 30%;
+        width: 45%;
     }
 
     .values {
-        width: 90%;
         margin-top: 50px;
     }
 }
