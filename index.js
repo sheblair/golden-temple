@@ -4,11 +4,11 @@ let i;
 
 for (i = 0; i < acc.length; i++) {
   acc[i].addEventListener("click", function() {
-    /* Toggle between adding and removing the "active" class,
+    /* toggle between adding and removing the "active" class,
     to highlight the button that controls the panel */
     this.classList.toggle("active");
 
-    /* Toggle between hiding and showing the active panel */
+    /* toggle between hiding and showing the active panel */
     const panel = this.nextElementSibling;
     if (panel.style.display === "block") {
       panel.style.display = "none";
@@ -32,7 +32,7 @@ const currentYear = new Date().getFullYear();
 copyright.innerHTML = `<p>© ${currentYear} Golden Temple Natural Grocery and Cafe</p>`;
 
 
-// slideshow of images on boutique page
+// image slideshows
 let slideIndex = 0;
 const slideshowImages = document.getElementsByClassName("slideshow-image");
 const prevBtn = document.querySelector(".prev");

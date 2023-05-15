@@ -962,12 +962,10 @@ p:last-child {
     font-size: .875rem;
 }
 
-/* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
 .active, .accordion:hover {
     background-color: var(--deep-gold);
 }
 
-/* Style the accordion panel. Note: hidden by default */
 .panel {
     padding: 0 18px;
     background-color: var(--deep-gold);
@@ -978,7 +976,7 @@ p:last-child {
 }
 
 .accordion:after {
-    content: '\02795'; /* Unicode character for "plus" sign (+) */
+    content: '\02795';
     font-size: 13px;
     color: black;
     float: right;
@@ -986,7 +984,7 @@ p:last-child {
 }
 
 .active:after {
-    content: "\2796"; /* Unicode character for "minus" sign (-) */
+    content: "\2796";
 }
 
 .panel-item {
@@ -1182,7 +1180,6 @@ TABLET STYLES
 
     .contact {
         margin-top: 50px;
-        width: 80%;
     }
 
     .contact-container {
