@@ -1573,6 +1573,10 @@ DESKTOP STYLES
         font-size: 2rem;
     }
 
+    .social-media a {
+        padding-top: 10px;
+    }
+
     .social-media-icons {
         margin: 15px 0;
     }
