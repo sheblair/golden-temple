@@ -748,12 +748,12 @@ SERVICES - MOBILE
 }
 
 .yoga-schedule {
-    border-bottom: 1px solid black;
     margin-bottom: 15px;
 }
 
 .schedule-section {
-    margin: 15px 0;
+    margin-top: 5px;
+    margin-bottom: 15px;
 }
 
 .practitioner-section {
@@ -1677,30 +1677,7 @@ DESKTOP STYLES
         width: 40%;
     }
 
-    .class-schedule {
-        display: none;
-    }
-
-    #teachers {
-        justify-content: flex-start;
-        align-items: flex-start;
-    }
-
-    #teachers > .practitioner-section {
-        width: 47%;
-        display: flex;
-        flex-direction: column;
-    }
-
-    #teachers div:first-child, #teachers div:nth-child(3) {
-        margin-right: 45px;
-    }
-
-    .practitioner-section-text {
-        margin-left: 0;
-    }
-
-    .yoga-img, .tarot-img {
+    .tarot-img {
         width: 100%;
         max-width: 100%;
     }
