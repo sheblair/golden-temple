@@ -10,4 +10,4 @@ Before:
 ![screenshot of old landing page](./img/screenshot-before.png)
 
 After:
-![screenshot of new landing page](./img/screenshot-after-real.png)
+![screenshot of new landing page](./img/screenshot-after.png)
