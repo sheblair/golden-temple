@@ -1,5 +1,5 @@
 
-/* 
+/*
 *
 *
 *
@@ -28,7 +28,7 @@ html {
 
 body {
     background-color: var(--light-yellow);
-    font-family: 'Nokora', sans-serif;    
+    font-family: 'Nokora', sans-serif;
     font-size: 1rem;
     padding: 10px;
     display: flex;
@@ -80,7 +80,7 @@ header, footer {
 }
 
 
-/* 
+/*
 *
 *
 *
@@ -112,7 +112,7 @@ p {
     padding-bottom: 60%;
     flex: 1;
 }
-  
+
 .slideshow-image {
     display: none;
     position: absolute;
@@ -122,13 +122,13 @@ p {
     height: 100%;
     background-color: black;
 }
-  
+
 .slideshow-image img {
     width: 100%;
     height: 100%;
     object-fit: contain;
 }
-  
+
 .prev,
 .next {
     position: absolute;
@@ -141,29 +141,29 @@ p {
     transition: 1s ease;
     border-radius: 0 3px 3px 0;
 }
-  
+
 .next {
     right: 0;
     border-radius: 3px 0 0 3px;
 }
-  
+
 .prev:hover,
 .next:hover {
     background-color: rgba(0, 0, 0, 0.8);
 }
-  
+
 .slideshow-active {
     display: block;
 }
-  
+
 .fade {
     animation-name: fade;
-    animation-duration: 1.5s;
+    animation-duration: 3s;
 }
-  
+
 @keyframes fade {
     from {
-      opacity: .8
+      opacity: 0
     }
     to {
       opacity: 1
@@ -202,7 +202,7 @@ header {
     flex-flow: row wrap;
     align-items: center;
     justify-content: center;
-}    
+}
 
 .fa-caret-down {
     padding: 0 5px;
@@ -313,7 +313,7 @@ footer {
 *
 *
 *
-HOMEPAGE - MOBILE 
+HOMEPAGE - MOBILE
 *
 *
 *
@@ -430,7 +430,7 @@ iframe {
 .social-media {
     display: flex;
     flex-direction: column;
-    margin-top: 40px; 
+    margin-top: 40px;
 }
 
 .social-media a {
@@ -448,7 +448,7 @@ iframe {
     display: flex;
     flex-direction: row;
     justify-content: center;
-    margin-top: 10px;  
+    margin-top: 10px;
 }
 
 .social-media-icons p {
@@ -456,11 +456,11 @@ iframe {
     font-size: 1.5rem;
 }
 
-/* 
+/*
 *
 *
 *
-ABOUT - MOBILE 
+ABOUT - MOBILE
 *
 *
 *
@@ -495,11 +495,11 @@ ABOUT - MOBILE
     font-family: 'Preahvihear', sans-serif;
 }
 
-/* 
+/*
 *
 *
 *
-BOUTIQUE - MOBILE 
+BOUTIQUE - MOBILE
 *
 *
 *
@@ -517,7 +517,7 @@ BOUTIQUE - MOBILE
 .boutique-description {
     font-size: .875rem;
     padding: 10px 0;
-}  
+}
 
 .boutique-pre-footer {
     margin-top: 50px;
@@ -539,22 +539,22 @@ BOUTIQUE - MOBILE
     background-color: var(--forest-green);
 }
 
-/* 
+/*
 *
 *
 *
-LOCATIONS - MOBILE 
+LOCATIONS - MOBILE
 *
 *
 *
 */
 
-.birmingham-main-container, 
+.birmingham-main-container,
 .trussville-main-container {
     align-items: flex-start;
 }
 
-.birmingham-main-container a, 
+.birmingham-main-container a,
 .trussville-main-container a {
     color: black;
 }
@@ -568,8 +568,8 @@ LOCATIONS - MOBILE
     width: 100%;
 }
 
-.bham-description, .bham-info, 
-.cafe-info, .tville-description, .tville-info, 
+.bham-description, .bham-info,
+.cafe-info, .tville-description, .tville-info,
 .tville-hours {
     margin-top: 20px;
 }
@@ -618,11 +618,11 @@ LOCATIONS - MOBILE
     margin: 15px 0 0 0;
 }
 
-/* 
+/*
 *
 *
 *
-GROCERY - MOBILE 
+GROCERY - MOBILE
 *
 *
 *
@@ -643,11 +643,11 @@ GROCERY - MOBILE
 }
 
 
-/* 
+/*
 *
 *
 *
-SUPPLEMENT - MOBILE 
+SUPPLEMENT - MOBILE
 *
 *
 *
@@ -672,11 +672,11 @@ SUPPLEMENT - MOBILE
     align-self: flex-start;
 }
 
-/* 
+/*
 *
 *
 *
-SERVICES - MOBILE 
+SERVICES - MOBILE
 *
 *
 *
@@ -815,11 +815,11 @@ p.dan-heading, p.dan-schedule {
     background-color: var(--forest-green);
 }
 
-/* 
+/*
 *
 *
 *
-CAFE - MOBILE 
+CAFE - MOBILE
 *
 *
 *
@@ -842,7 +842,7 @@ CAFE - MOBILE
     align-items: flex-start;
 }
 
-.cafe-main-info .cafe-div p, 
+.cafe-main-info .cafe-div p,
 .cafe-main-info .cafe-div a {
     margin: 5px 0;
     color: black;
@@ -952,7 +952,6 @@ p:last-child {
     text-align: left;
     border: none;
     outline: none;
-    transition: 0.4s;
     font-family: 'Nokora', sans-serif;
     font-size: .875rem;
 }
@@ -966,7 +965,7 @@ p:last-child {
     background-color: var(--deep-gold);
     max-height: 0;
     overflow: hidden;
-    transition: max-height 0.2s ease-out;
+    transition: max-height 0.3s ease-in-out;
     margin-bottom: 10px;
 }
 
@@ -999,7 +998,7 @@ p:last-child {
 }
 
 #salad-panel .panel-item, #specialties-panel .panel-item,
-#sandwiches-panel .panel-item, #kids-panel .panel-item, 
+#sandwiches-panel .panel-item, #kids-panel .panel-item,
 #smoothies-panel .panel-item {
     flex-direction: column;
 }
@@ -1013,14 +1012,14 @@ p:last-child {
     margin: 10px 0;
     }
 
-#salad-panel .panel-item .prices p, 
+#salad-panel .panel-item .prices p,
 #carrot-juice .prices p,
 #smoothies-panel .panel-item .prices p {
     margin-right: 5px;
 }
 
 #salad-panel .panel-item .prices p:nth-child(2),
-#carrot-juice .prices p:nth-child(2), 
+#carrot-juice .prices p:nth-child(2),
 #carrot-juice .prices p:nth-child(4),
 #smoothies-panel .panel-item .prices p:nth-child(2),
 #smoothies-panel .panel-item .prices p:nth-child(4)  {
@@ -1086,7 +1085,7 @@ p:last-child {
     color: black;
 }
 
-/* 
+/*
 *
 *
 *
@@ -1230,7 +1229,7 @@ TABLET STYLES
         align-items: flex-start;
     }
 
-    .birmingham-main-container, 
+    .birmingham-main-container,
     .trussville-main-container {
         display: flex;
         flex-direction: column;
@@ -1259,7 +1258,7 @@ TABLET STYLES
 
     .tville-info p:first-child {
         margin-bottom: 0;
-    }    
+    }
 
     /* SERVICES - TABLET */
     #services-menu ul {
@@ -1323,7 +1322,7 @@ TABLET STYLES
         display: flex;
         align-items: center;
     }
-    
+
     .dan-info-text {
         width: 50%;
         margin-left: 20px;
@@ -1338,7 +1337,7 @@ TABLET STYLES
         margin: 0;
         font-size: 1rem;
     }
-    
+
     .cafe-div-container {
         display: grid;
         grid-template-columns: 1fr 1fr;
@@ -1366,7 +1365,7 @@ TABLET STYLES
         grid-row-start: 3;
         grid-row-end: 4;
     }
-    
+
     .menu-heading {
         font-size: 1rem;
     }
@@ -1394,7 +1393,7 @@ TABLET STYLES
         font-size: 1.2rem;
     }
 }
-/* 
+/*
 *
 *
 *
@@ -1491,11 +1490,11 @@ DESKTOP STYLES
     .hero-text-upper-container {
         width: 50%;
     }
-    
+
     .hero-text-upper, .hero-text-lower {
         width: 100%;
     }
-    
+
     .hero-text-upper {
         font-size: 1.3rem;
         line-height: 2.2rem;
@@ -1582,7 +1581,7 @@ DESKTOP STYLES
     }
 
     /* LOCATIONS - DESKTOP */
-    .birmingham-main-container, 
+    .birmingham-main-container,
     .trussville-main-container {
         flex-direction: row;
         justify-content: space-between;
@@ -1634,9 +1633,9 @@ DESKTOP STYLES
 
     #iframe-tville {
         width: 100%;
-        margin: 0; 
-        padding: 10px 5px 5px 5px; 
-    }    
+        margin: 0;
+        padding: 10px 5px 5px 5px;
+    }
 
     /* SUPPLEMENT - DESKTOP */
     .supplement-container {
@@ -1758,7 +1757,7 @@ DESKTOP STYLES
     .top-menu-link a {
         text-decoration: none;
     }
-    
+
     .top-menu-link {
         padding-left: 0;
     }
@@ -1810,7 +1809,7 @@ DESKTOP STYLES
     .cafe-div p:has(+ img) {
         margin-bottom: 20px;
     }
-    
+
     .cafe-div img:has(+ p) {
         margin-bottom: 20px;
     }
@@ -1835,7 +1834,7 @@ DESKTOP STYLES
     .boutique-description {
         font-size: 1rem;
     }
-       
+
     .boutique-bottom-heading {
         font-size: 1.8rem;
     }

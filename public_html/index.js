@@ -50,7 +50,7 @@ function showSlides() {
 
   slideshowImages[slideIndex - 1].classList.add("fade", "slideshow-active");
 
-  setTimeout(showSlides, 3000);
+  setTimeout(showSlides, 5000);
 }
 
 prevBtn.addEventListener("click", () => {
