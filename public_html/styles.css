@@ -1,0 +1,1864 @@
+
+/* 
+*
+*
+*
+BASE STYLES
+*
+*
+*
+*/
+
+:root {
+    --forest-green: #00661B;
+    --deep-gold: #FFD326;
+    --light-yellow: #fcf8c3;
+    --orange: #D4711A;
+}
+
+html {
+    font-size: 16px;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: var(--light-yellow);
+    font-family: 'Nokora', sans-serif;    
+    font-size: 1rem;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+header, footer {
+    border-radius: 5px;
+}
+
+.uppercase {
+    text-transform: uppercase;
+}
+
+.bold {
+    font-weight: bold;
+}
+
+.align-right {
+    text-align: right;
+}
+
+.align-center {
+    text-align: center;
+}
+
+.accent-font {
+    font-family: 'Preahvihear', sans-serif;
+}
+
+.tablet-only {
+    display: none;
+}
+
+.desktop-only {
+    display: none;
+}
+
+.page-heading {
+    align-self: flex-start;
+    margin-bottom: 20px;
+}
+
+@media screen and (min-width: 800px) {
+    .mobile-only {
+        display: none;
+    }
+}
+
+
+/* 
+*
+*
+*
+*
+*
+*
+MOBILE STYLES
+*
+*
+*
+*
+*
+*
+*/
+
+.page-heading {
+    font-size: 1.2rem;
+}
+
+p {
+    font-size: .875rem;
+}
+
+/* SLIDESHOW STYLES - MOBILE */
+.slideshow-container {
+    margin-top: 10px;
+    position: relative;
+    width: 100%;
+    padding-bottom: 60%;
+    flex: 1;
+}
+  
+.slideshow-image {
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: black;
+}
+  
+.slideshow-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+  
+.prev,
+.next {
+    position: absolute;
+    top: 45%;
+    font-size: .9em;
+    font-weight: bold;
+    padding: 10px;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.5);
+    transition: 1s ease;
+    border-radius: 0 3px 3px 0;
+}
+  
+.next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+  
+.prev:hover,
+.next:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+  
+.slideshow-active {
+    display: block;
+}
+  
+.fade {
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+  
+@keyframes fade {
+    from {
+      opacity: .8
+    }
+    to {
+      opacity: 1
+    }
+}
+
+/* HEADER - MOBILE */
+#desktop-nav-left, #desktop-nav-right {
+    display: none;
+}
+
+header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
+.logo-link {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    color: #000000;
+}
+
+.header-logo {
+    width: 85%;
+    max-width: 85%;
+    margin: 20px;
+}
+
+.navbar {
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    justify-content: center;
+}    
+
+.fa-caret-down {
+    padding: 0 5px;
+}
+
+.dropdown .dropbtn {
+  border: none;
+  outline: none;
+  color: black;
+  padding: 8px 16px;
+  background-color: inherit;
+  font-size: .7rem;
+  font-family: inherit;
+  margin: 0;
+  text-transform: uppercase;
+  transition: background-color 0.3s ease;
+  transition: color 0.3s ease;
+  border-radius: 5px 5px 0 0;
+}
+
+.dropdown .singlebtn {
+    border-radius: 5px;
+}
+
+.navbar a:hover, .dropdown:hover .dropbtn {
+  background-color: var(--forest-green);
+  color: var(--deep-gold);
+  cursor: pointer;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: var(--forest-green);
+  min-width: 140px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  float: none;
+  color: var(--deep-gold);
+  padding: 10px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+  text-transform: uppercase;
+  font-size: .7rem;
+}
+
+.dropdown-content a:hover {
+  text-decoration: underline;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+/* FOOTER - MOBILE */
+footer {
+    margin-top: 40px;
+    padding: 0 20px;
+    width: 100%;
+    background-color: var(--forest-green);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.footer-icons {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.footer-icons a {
+    color: var(--deep-gold);
+    margin: 0 5px;
+}
+
+.copyright-container {
+    text-align: center;
+    margin: 10px 0 0 0;
+}
+
+.footer-credit {
+    margin-bottom: 10px;
+}
+
+.copyright p, .footer-credit {
+    font-size: .65rem;
+    font-style: italic;
+    color: var(--deep-gold)
+}
+
+.footer-credit a {
+    color: var(--deep-gold);
+    text-decoration: none;
+}
+
+.footer-credit a:hover {
+    background-color: var(--light-yellow);
+    color: var(--forest-green);
+}
+
+/*
+*
+*
+*
+HOMEPAGE - MOBILE 
+*
+*
+*
+*/
+main {
+    margin-top: 40px;
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero-text-upper {
+    line-height: 1.8rem;
+}
+
+.hero-img-upper, .hero-img-lower {
+    width: 100%;
+    max-width: 100%;
+    border-radius: 5px;
+}
+
+.hero-img-upper {
+    margin-top: 15px;
+}
+
+.hero-img-lower {
+    margin: 25px 0;
+}
+
+.hero-text-lower, .hero-text-upper {
+    font-size: .9rem;
+    margin: 10px 0;
+    line-height: 1.3rem;
+}
+
+.contact {
+    margin-top: 25px;
+    background-color: var(--deep-gold);
+    color: black;
+    width: 90%;
+    border-radius: 5px;
+}
+
+.contact-container {
+    border: none;
+    border-radius: 5px;
+}
+
+.visit-us, .follow-us, .store-title {
+    font-weight: bold;
+}
+
+.visit-us, .follow-us {
+    font-size: 1.1rem;
+}
+
+.store-title {
+    text-decoration: underline;
+}
+
+.store-title a {
+    padding: 5px;
+    border-radius: 5px;
+}
+
+.store-title a:hover {
+    color: var(--deep-gold);
+    background-color: var(--forest-green);
+}
+
+.contact-container {
+    padding: 15px;
+}
+
+.location-bham {
+    margin-top: 15px;
+}
+
+.location-tville {
+    margin-top: 25px;
+}
+
+.location-bham p, .location-tville p {
+    font-size: .75rem;
+}
+
+.location-bham a, .location-tville a {
+    color: black;
+    text-decoration: none;
+}
+
+iframe {
+    margin-top: 20px;
+    width: 100%;
+}
+
+
+.address {
+    padding-top: 8px;
+    padding-left: 5px;
+}
+
+.phone, .fax, .email {
+    padding-top: 2px;
+    padding-left: 5px;
+}
+
+.follow-us {
+    text-align: center;
+}
+
+.social-media {
+    display: flex;
+    flex-direction: column;
+    margin-top: 40px; 
+}
+
+.social-media a {
+    color: black;
+    padding: 5px 5px 0 5px;
+    border-radius: 5px;
+}
+
+.social-media a:hover {
+    color: var(--deep-gold);
+    background-color: var(--forest-green);
+}
+
+.social-media-icons {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-top: 10px;  
+}
+
+.social-media-icons p {
+    margin: 0 10px;
+    font-size: 1.5rem;
+}
+
+/* 
+*
+*
+*
+ABOUT - MOBILE 
+*
+*
+*
+*/
+.banner {
+    width: 100%;
+    max-width: 100%;
+    background-color: var(--deep-gold);
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.value {
+    background-color: var(--deep-gold);
+    padding: 10px;
+    border-radius: 5px;
+    margin: 10px 0;
+}
+
+.about-heading {
+    margin: 10px 0;
+    font-family: 'Preahvihear', sans-serif;
+    font-size: 1rem;
+}
+
+.mission {
+    margin: 15px 0;
+}
+
+.values-heading {
+    margin: 0 0 5px 0;
+    font-family: 'Preahvihear', sans-serif;
+}
+
+/* 
+*
+*
+*
+BOUTIQUE - MOBILE 
+*
+*
+*
+*/
+#boutique-main {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+}
+
+#boutique-main .page-heading {
+    margin-bottom: 0;
+}
+
+.boutique-description {
+    font-size: .875rem;
+    padding: 10px 0;
+}  
+
+.boutique-pre-footer {
+    margin-top: 50px;
+}
+
+.boutique-bottom-heading {
+    text-align: center;
+    font-size: 1rem;
+}
+
+.boutique-description a {
+    padding: 3px;
+    border-radius: 3px;
+    color: black;
+}
+
+.boutique-description a:hover {
+    color: var(--deep-gold);
+    background-color: var(--forest-green);
+}
+
+/* 
+*
+*
+*
+LOCATIONS - MOBILE 
+*
+*
+*
+*/
+
+.birmingham-main-container, 
+.trussville-main-container {
+    align-items: flex-start;
+}
+
+.birmingham-main-container a, 
+.trussville-main-container a {
+    color: black;
+}
+
+.bham-img, .tville-img {
+    width: 100%;
+    max-width: 100%;
+}
+
+.bham-left, .bham-right, .tville-left, .tville-right {
+    width: 100%;
+}
+
+.bham-description, .bham-info, 
+.cafe-info, .tville-description, .tville-info, 
+.tville-hours {
+    margin-top: 20px;
+}
+
+.bham-description, .bham-info, .tville-description, .tville-info {
+    line-height: 1.4rem;
+}
+
+.bham-info, .cafe-info, .tville-info, .tville-hours {
+    background-color: var(--deep-gold);
+    padding: 10px;
+    border-radius: 5px;
+    width: 100%;
+}
+
+.bham-info p:first-child, .tville-info p:first-child {
+    margin-top: 5px;
+}
+
+.bham-info p:first-child, .cafe-info p:first-child {
+    font-weight: bold;
+    margin: 5px 0;
+    font-size: 1.2rem;
+}
+
+.cafe-info p:nth-child(4) {
+    margin-top: 10px;
+}
+
+.hours {
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+.tville-hours p:first-child {
+    margin-bottom: 5px;
+}
+
+.tville-info p:first-child {
+    margin-bottom: 10px;
+}
+
+#tville-facebook-link {
+    font-weight: bold;
+    font-size: 1.2rem;
+    margin: 15px 0 0 0;
+}
+
+/* 
+*
+*
+*
+GROCERY - MOBILE 
+*
+*
+*
+*/
+#grocery-main {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+}
+
+.grocery-text {
+    align-self: flex-start;
+    padding: 10px 0;
+}
+
+#grocery-main .page-heading {
+    margin-bottom: 0;
+}
+
+
+/* 
+*
+*
+*
+SUPPLEMENT - MOBILE 
+*
+*
+*
+*/
+#supplement-main {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+}
+
+#supplement-main .page-heading {
+    margin-bottom: 0;
+}
+
+.supplement-img {
+    width: 100%;
+    max-width: 100%;
+}
+
+.supplement-text {
+    margin: 10px 0;
+    align-self: flex-start;
+}
+
+/* 
+*
+*
+*
+SERVICES - MOBILE 
+*
+*
+*
+*/
+#yoga, #massage, #tarot, #events {
+    width: 100%;
+    margin-bottom: 30px;
+}
+
+#services-menu {
+    margin-top: 30px;
+}
+
+#services-menu ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: space-between;
+}
+
+#services-menu ul li {
+    padding: 5px 10px;
+    background-color: var(--forest-green);
+    border-radius: 5px;
+}
+
+#services-menu ul li a {
+    color: var(--deep-gold);
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+.services-divider {
+    width: 100%;
+    height: 50px;
+    background-color: var(--deep-gold);
+    border-radius: 5px;
+    margin: 30px 0;
+}
+
+.services-heading {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid black;
+    padding-bottom: 10px;
+}
+
+.services-heading a {
+    text-decoration: none;
+    color: black;
+}
+
+.services-intro {
+    margin-bottom: 15px;
+    padding: 15px 0;
+}
+
+#yoga-intro, #tarot-intro {
+    border-bottom: 1px solid black;
+}
+
+.practitioner-section p {
+    padding: 5px 0;
+}
+
+.services-intro p {
+    line-height: 1.4rem;
+}
+
+.yoga-schedule {
+    margin-bottom: 15px;
+}
+
+.schedule-section {
+    margin-top: 5px;
+    margin-bottom: 15px;
+}
+
+.practitioner-section {
+    margin-bottom: 30px;
+}
+
+.yoga-img, .massage-img, .tarot-img {
+    width: 100%;
+    max-width: 100%;
+    margin: 15px 0;
+}
+
+#massage-intro {
+    margin-bottom: 0;
+}
+
+.michele-intro-text a {
+    color: black;
+    padding: 3px;
+    border-radius: 3px;
+}
+
+.michele-intro-text a:hover {
+    color: var(--deep-gold);
+    background-color: var(--forest-green);
+}
+
+p.dan-heading, p.dan-schedule {
+    padding: 0;
+}
+
+.dan-subsection {
+    margin-top: 10px;
+}
+
+.dan-subsection > p {
+    padding: 0;
+}
+
+#events-intro p:nth-child(2) {
+    text-align: center;
+    font-size: 1.1rem;
+    font-weight: bold;
+    margin-top: 20px;
+}
+
+#events {
+    margin-bottom: 0;
+}
+
+#events-intro a {
+    color: black;
+    padding: 5px;
+    border-radius: 5px;
+}
+
+#events-intro a:hover {
+    color: var(--deep-gold);
+    background-color: var(--forest-green);
+}
+
+/* 
+*
+*
+*
+CAFE - MOBILE 
+*
+*
+*
+*/
+#cafe-main {
+    align-items: flex-start;
+}
+
+#cafe-main h2 {
+    margin-bottom: 0;
+}
+
+.cafe-main-info {
+    margin-top: 20px;
+}
+
+.cafe-main-info > .cafe-div {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.cafe-main-info .cafe-div p, 
+.cafe-main-info .cafe-div a {
+    margin: 5px 0;
+    color: black;
+    padding-left: 5px;
+}
+
+.cafe-main-info .cafe-div p:nth-child(3),
+.cafe-main-info .cafe-div p:first-child {
+    padding-left: 0;
+}
+
+.cafe-main-info .cafe-div a {
+    color: black;
+    padding: 5px;
+}
+
+.cafe-main-info .cafe-div a:hover {
+    color: var(--deep-gold);
+    background-color: var(--forest-green);
+    border-radius: 5px;
+}
+
+.cafe-main-info .cafe-div p:nth-child(2),
+.cafe-main-info .cafe-div p:nth-child(4) {
+    margin-bottom: 0;
+    margin-top: 10px;
+}
+
+.cafe-img-hero {
+    width: 100%;
+    max-width: 100%;
+    margin: 20px 0;
+}
+
+.cafe-div {
+    border-radius: 5px;
+    background-color: var(--deep-gold);
+    padding: 15px;
+    margin: 15px 0;
+    font-size: .9rem;
+}
+
+.cafe-div p:has(+ img) {
+    margin-bottom: 10px;
+}
+
+.cafe-div img:has(+ p) {
+    margin-bottom: 10px;
+}
+
+/* over-writing the CSS because :has() is not supported in firefox as of 5/15/23 */
+.cafe-div-container .cafe-div p {
+    margin: 10px 0;
+}
+
+.cafe-div-container .cafe-div:first-child p {
+    margin-top: 0;
+}
+
+.cafe-div-container .cafe-div:nth-child(3)
+p:last-child {
+    margin-bottom: 0;
+}
+
+
+.cafe-img {
+    width: 100%;
+    max-width: 100%;
+}
+
+#menu {
+    width: 100%;
+    margin-top: 40px;
+}
+
+#menu h3 {
+    margin-left: 18px;
+}
+
+.menu-heading {
+    margin: 20px 0 20px 18px;
+    text-align: center;
+    font-size: .875rem;
+}
+
+.menu-heading a {
+    color: black;
+    padding: 5px;
+    border-radius: 5px;
+}
+
+.menu-heading a:hover {
+    color: var(--deep-gold);
+    background-color: var(--forest-green);
+}
+
+.main-menu {
+    margin-top: 30px;
+}
+
+.accordion {
+    background-color: var(--light-yellow);
+    color: black;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    text-align: left;
+    border: none;
+    outline: none;
+    transition: 0.4s;
+    font-family: 'Nokora', sans-serif;
+    font-size: .875rem;
+}
+
+.active, .accordion:hover {
+    background-color: var(--deep-gold);
+}
+
+.panel {
+    padding: 0 18px;
+    background-color: var(--deep-gold);
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+    margin-bottom: 10px;
+}
+
+.accordion:after {
+    content: '\02795';
+    font-size: 13px;
+    color: black;
+    float: right;
+    margin-left: 5px;
+}
+
+.active:after {
+    content: "\2796";
+}
+
+.panel-item {
+    font-size: .875rem;
+    display: flex;
+    justify-content: space-between;
+    padding: 15px 0;
+}
+
+#daily-special-panel {
+    flex-direction: column;
+}
+
+#daily-special-panel p:first-child {
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+#salad-panel .panel-item, #specialties-panel .panel-item,
+#sandwiches-panel .panel-item, #kids-panel .panel-item, 
+#smoothies-panel .panel-item {
+    flex-direction: column;
+}
+
+#kids-panel .panel-item:last-of-type {
+    flex-direction: row;
+}
+
+#salad-panel .panel-item .prices {
+    display: flex;
+    margin: 10px 0;
+    }
+
+#salad-panel .panel-item .prices p, 
+#carrot-juice .prices p,
+#smoothies-panel .panel-item .prices p {
+    margin-right: 5px;
+}
+
+#salad-panel .panel-item .prices p:nth-child(2),
+#carrot-juice .prices p:nth-child(2), 
+#carrot-juice .prices p:nth-child(4),
+#smoothies-panel .panel-item .prices p:nth-child(2),
+#smoothies-panel .panel-item .prices p:nth-child(4)  {
+    margin-right: 15px;
+}
+
+.panel-item-heading {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+
+.panel-item-heading p {
+    font-weight: bold;
+}
+
+#carrot-juice {
+    display: flex;
+    flex-direction: column;
+}
+
+.carrot-juice-heading {
+    font-weight: bold;
+    align-self: center;
+    border-bottom: 1px solid black;
+    margin-bottom: 10px;
+}
+
+#carrot-juice .prices,
+#smoothie-prices {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-bottom: 10px;
+}
+
+.smoothie-heading {
+    font-size: .875rem;
+    font-style: italic;
+}
+
+#smoothie-prices .prices {
+    display: flex;
+    justify-content: center;
+}
+
+.smoothie-section-heading {
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.back-to-top {
+    align-self: center;
+}
+
+.back-to-top p {
+    margin-top: 20px;
+}
+
+.back-to-top a {
+    text-decoration: none;
+    color: black;
+}
+
+/* 
+*
+*
+*
+*
+*
+*
+TABLET STYLES
+*
+*
+*
+*
+*
+*/
+
+@media screen and (min-width: 800px) {
+    .tablet-only {
+        display: block;
+    }
+
+    .page-heading {
+        font-size: 1.5rem;
+    }
+
+    p {
+        font-size: .975rem;
+    }
+
+    /* PAGE WIDTHS */
+    #home-main {
+        width: 80%;
+    }
+
+    #about-main, #grocery-main, #supplement-main,
+    #boutique-main, #cafe-main, #services-main,
+    #birmingham-main, #trussville-main {
+        width: 80%;
+        margin: 40px 0;
+    }
+
+    /* SLIDESHOW - TABLET */
+    .prev, .next {
+        top: 40%;
+        font-size: 1.8rem;
+        padding: 20px;
+    }
+
+    /* HEADER - TABLET */
+    .dropdown .dropbtn, .dropdown-content a {
+        font-size: .8rem;
+    }
+
+    .header-logo {
+        width: 65%;
+        max-width: 65%;
+    }
+
+     /* FOOTER - TABLET */
+     footer {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .copyright p, .footer-credit {
+        font-size: .7rem;
+    }
+
+    /* HOMEPAGE - TABLET */
+    .home-hero-area {
+        background: url('img/img-home/GT_flower-pale.png');
+        background-size: contain;
+        background-repeat: no-repeat;
+    }
+
+    .hero-area-upper, .hero-area-lower {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .hero-text-upper, .hero-text-lower {
+        font-size: 1rem;
+        line-height: 1.5rem;
+    }
+
+    .contact {
+        margin-top: 50px;
+    }
+
+    .contact-container {
+        padding: 20px;
+        display: flex;
+        flex-direction: column;
+        margin-top: 10px;
+    }
+
+    .visit-us {
+        margin-left: 20px;
+    }
+
+    .location-bham p, .location-tville p {
+        font-size: 1rem;
+    }
+
+    .stores {
+        margin: 20px;
+    }
+
+    .location-bham, .location-tville {
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: space-between;
+        align-items: flex-start;
+    }
+
+    .location-tville {
+        margin-top: 30px;
+    }
+
+    #iframe-bham-home, #iframe-tville-home {
+        width: 45%;
+        margin-top: 0;
+        justify-self: flex-end;
+    }
+
+    /* BOUTIQUE - TABLET */
+    .boutique-description {
+        font-size: .975rem;
+    }
+
+    .boutique-bottom-heading {
+        font-size: 1.3rem;
+    }
+
+
+     /* LOCATIONS - BIRMINGHAM AND TRUSSVILLE - TABLET*/
+    .bham-left, .tville-left {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .birmingham-main-container, 
+    .trussville-main-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .bham-info, .cafe-info, .tville-info {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    #iframe-bham, #iframe-cafe, #iframe-tville {
+        width: 45%;
+        margin: 10px 10px 10px 0;
+    }
+
+    .bham-text, .cafe-text, .tville-text {
+        margin-left: 10px;
+        margin-top: 10px;
+    }
+
+    .tville-hours {
+        padding: 0;
+    }
+
+    .tville-info p:first-child {
+        margin-bottom: 0;
+    }    
+
+    /* SERVICES - TABLET */
+    #services-menu ul {
+        justify-content: space-evenly;
+    }
+
+    .yoga-img, .massage-img, .tarot-img {
+        width: 45%;
+        max-width: 45%;
+    }
+
+    .yoga-content-section > .practitioner-section {
+        display: flex;
+    }
+
+    .practitioner-section-text {
+        margin-left: 20px;
+        margin-top: 10px;
+    }
+
+    .michele-intro {
+        display: flex;
+        align-items: center;
+    }
+
+    .michele-intro-text {
+        margin-left: 20px;
+    }
+
+    .michele-images {
+        display: flex;
+        justify-content: center;
+        margin: 20px 0;
+    }
+
+    .michele-images img:nth-child(2) {
+        margin: 0 20px;
+    }
+
+    .michele-images img {
+        width: 30%;
+        max-width: 30%;
+    }
+
+    .michele-quote {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .michele-quote p {
+        width: 80%;
+        text-align: center;
+    }
+
+    #massage {
+        margin-bottom: 60px;
+    }
+
+    .dan-info {
+        display: flex;
+        align-items: center;
+    }
+    
+    .dan-info-text {
+        width: 50%;
+        margin-left: 20px;
+    }
+
+    #events-intro p:nth-child(2) {
+        font-size: 1.3rem;
+    }
+
+    /* CAFE - TABLET */
+    .cafe-div {
+        margin: 0;
+        font-size: 1rem;
+    }
+    
+    .cafe-div-container {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 15px;
+        margin-top: 30px;
+        justify-items: center;
+    }
+
+    .cafe-div-container div:first-child {
+        grid-row-start: 1;
+        grid-row-end: 2;
+    }
+
+    .cafe-div-container div:nth-child(2) {
+        grid-row-start: 1;
+        grid-row-end: 3;
+    }
+
+    .cafe-div-container div:nth-child(3) {
+        grid-row-start: 2;
+        grid-row-end: 4;
+    }
+
+    .cafe-div-container div:nth-child(4) {
+        grid-row-start: 3;
+        grid-row-end: 4;
+    }
+    
+    .menu-heading {
+        font-size: 1rem;
+    }
+
+    .smoothie-options-container {
+        display: flex;
+        flex-flow: row;
+    }
+
+    .smoothie-options-container .panel-item {
+        justify-content: flex-start;
+        width: 28%;
+    }
+
+    #carrot-juice p:last-child {
+        align-self: center;
+    }
+
+    /* ABOUT - TABLET */
+    .mission {
+        margin: 30px 0;
+    }
+
+    .about-heading {
+        font-size: 1.2rem;
+    }
+}
+/* 
+*
+*
+*
+*
+*
+*
+DESKTOP STYLES
+*
+*
+*
+*
+*
+*
+*/
+
+@media screen and (min-width: 1200px) {
+    .page-heading {
+        font-size: 1.8rem;
+    }
+
+    p {
+        font-size: 1rem;
+    }
+
+    #about-main, #grocery-main, #supplement-main,
+    #services-main, #cafe-main, #birmingham-main,
+    #trussville-main {
+        margin: 60px 0;
+    }
+
+    /* SLIDESHOW - DESKTOP */
+    .slideshow-container {
+        width: 80%;
+        max-width: 80%;
+        margin-top: 50px;
+    }
+
+    .prev, .next {
+        top: 45%;
+        font-size: 2.2rem;
+        padding: 30px;
+    }
+
+    /* HEADER - DESKTOP */
+    #mobile-nav {
+        display: none;
+    }
+
+    #desktop-nav-left, #desktop-nav-right {
+        display: flex;
+        margin-bottom: 30px;
+    }
+
+    header {
+        align-items: flex-end;
+        flex-direction: row;
+        justify-content: center;
+        margin-top: 20px;
+    }
+
+    .logo-link {
+        width: 30%;
+        max-width: 30%;
+    }
+
+    .header-logo {
+        width: 100%;
+        max-width: 100%;
+        margin: 0;
+    }
+
+    .dropdown .dropbtn, .dropdown-content a {
+        font-size: .9rem;
+    }
+
+    /* FOOTER - DESKTOP */
+    footer {
+        margin-top: 100px;
+    }
+
+    /* HOMEPAGE - DESKTOP */
+    #home-main {
+        margin-top: 80px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .desktop-only {
+        display: block;
+    }
+
+    .hero-text-upper-container {
+        width: 50%;
+    }
+    
+    .hero-text-upper, .hero-text-lower {
+        width: 100%;
+    }
+    
+    .hero-text-upper {
+        font-size: 1.3rem;
+        line-height: 2.2rem;
+        padding-bottom: 20px;
+    }
+
+    .hero-area-upper, .hero-area-lower {
+        width: 100%;
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: space-between;
+    }
+
+    .hero-img-upper {
+        align-self: flex-end;
+        width: 45%;
+    }
+
+    .hero-area-lower {
+        margin-top: 140px;
+    }
+
+    .hero-text-lower-container {
+        width: 48%;
+    }
+
+    .hero-text-lower {
+        margin: 30px 0;
+    }
+
+    .hero-img-lower {
+        align-self: flex-start;
+        width: 45%;
+    }
+
+    .contact {
+        margin-top: 170px;
+        justify-content: flex-start;
+    }
+
+    .stores {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .location-info {
+        margin-right: 30px;
+    }
+
+    .location-bham p, .location-tville p {
+        font-size: .8rem;
+    }
+
+    .location-bham, .location-tville {
+        width: 100%;
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: flex-start;
+    }
+
+    .location-tville {
+        margin-top: 15px;
+    }
+
+    #iframe-bham-home, #iframe-tville-home{
+        width: 50%;
+    }
+
+    .visit-us, .follow-us {
+        font-size: 1.5rem;
+    }
+
+    .social-media-icons i {
+        font-size: 2rem;
+    }
+
+    .social-media a {
+        padding-top: 10px;
+    }
+
+    .social-media-icons {
+        margin: 15px 0;
+    }
+
+    /* LOCATIONS - DESKTOP */
+    .birmingham-main-container, 
+    .trussville-main-container {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .bham-left {
+        width: 50%;
+        margin-right: 15px;
+    }
+
+    .bham-right {
+        width: 48%;
+    }
+
+    .bham-info, .cafe-info {
+        display: flex;
+        flex-direction: row;
+    }
+
+    #iframe-bham, #iframe-cafe {
+        width: 200px;
+        height: 200px;
+    }
+
+    .bham-text, .cafe-text {
+        margin-right: 10px;
+    }
+
+    .bham-text p, .cafe-text p, .tville-text p {
+        font-size: .9rem;
+    }
+
+    .tville-right {
+        width: 65%;
+    }
+
+    .tville-left {
+        margin-right: 20px;
+    }
+
+    .tville-img, .tville-description {
+        width: 90%;
+    }
+
+    .tville-right, .tville-info {
+        display: flex;
+        flex-direction: column;
+    }
+
+    #iframe-tville {
+        width: 100%;
+        margin: 0; 
+        padding: 10px 5px 5px 5px; 
+    }    
+
+    /* SUPPLEMENT - DESKTOP */
+    .supplement-container {
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: space-between;
+    }
+
+    .supplement-section {
+        display: flex;
+        flex-direction: column;
+        margin: 20px 0;
+        width: 45%;
+    }
+
+    /* SERVICES - DESKTOP */
+    #services-top p {
+        margin-bottom: 50px;
+    }
+
+    .yoga-content-section {
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: space-between;
+        align-items: flex-start;
+    }
+
+    #yoga-intro, .yoga-schedule {
+        border-bottom: 0;
+        margin-top: 15px;
+    }
+
+    #yoga-intro {
+        width: 40%;
+    }
+
+    .yoga-schedule {
+        width: 40%;
+    }
+
+    .tarot-img {
+        width: 100%;
+        max-width: 100%;
+    }
+
+    .michele-container {
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .massage-img {
+        width: 30%;
+        max-width: 30%;
+    }
+
+    .michele-intro {
+        align-items: flex-start;
+    }
+
+    .michele-intro-text {
+        margin-top: 15px;
+        width: 60%;
+    }
+
+    .michele-images {
+        width: 100%;
+        justify-content: center;
+    }
+
+    .michele-images img {
+        width: 100%;
+    }
+
+    .michele-quote p {
+        width: 60%;
+    }
+
+    #tarot > .practitioner-section {
+        width: 100%;
+    }
+
+    .tarot-img {
+        width: 50%;
+    }
+
+    .dan-info {
+        align-items: flex-start;
+    }
+
+    .dan-info-text {
+        margin-top: 15px;
+    }
+
+    /* CAFE - DESKTOP */
+    #cafe-main {
+        align-items: center;
+    }
+
+    .cafe-main-info {
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        align-items: flex-start;
+        border-radius: 5px;
+        width: 100%;
+    }
+
+    .cafe-main-info .cafe-div {
+        margin: 0 40px 0 0;
+        padding: 10px 10px 10px 0;
+        background-color: var(--light-yellow);
+        flex-direction: row;
+        align-items: center;
+        justify-content: flex-start;
+    }
+
+    .top-menu-link a {
+        text-decoration: none;
+    }
+    
+    .top-menu-link {
+        padding-left: 0;
+    }
+
+    .cafe-main-info .cafe-div p:nth-child(2),
+    .cafe-main-info .cafe-div p:nth-child(4) {
+        margin-right: 10px;
+        margin-left: 20px;
+        margin-top: 0;
+    }
+
+    .cafe-main-info img {
+        display: none;
+    }
+
+    .cafe-div {
+        display: flex;
+        justify-content: space-between;
+        padding: 30px;
+        font-size: 1rem;
+    }
+
+    .cafe-div-container .cafe-div:first-child {
+        flex-flow: row wrap;
+    }
+
+    .cafe-div-container .cafe-div:first-child p {
+        width: 45%;
+    }
+
+    .cafe-div-container .cafe-div:first-child img {
+        width: 50%;
+    }
+
+    .cafe-div-container .cafe-div:last-child img:last-child {
+        width: 100%;
+    }
+
+    .cafe-div-container .cafe-div:nth-child(3),
+    .cafe-div-container .cafe-div:nth-child(2) {
+        flex-direction: column;
+    }
+
+    .cafe-div-container .cafe-div:nth-child(2),
+    .cafe-div-container .cafe-div:last-child {
+        width: 85%;
+    }
+
+    .cafe-div p:has(+ img) {
+        margin-bottom: 20px;
+    }
+    
+    .cafe-div img:has(+ p) {
+        margin-bottom: 20px;
+    }
+
+    .cafe-div-container .cafe-div:nth-child(2) p {
+        margin: 20px 0;
+    }
+
+    #menu {
+        width: 80%;
+    }
+
+    #menu button {
+        font-size: 1rem;
+    }
+
+    #menu .panel * {
+        font-size: 1rem;
+    }
+
+    /* BOUTIQUE - DESKTOP */
+    .boutique-description {
+        font-size: 1rem;
+    }
+       
+    .boutique-bottom-heading {
+        font-size: 1.8rem;
+    }
+
+    /* ABOUT - DESKTOP */
+    #about-main {
+        flex-flow: row wrap;
+        justify-content: space-between;
+    }
+
+    .about-heading {
+        font-size: 1.3rem;
+    }
+
+    .banner {
+        width: 50%;
+    }
+
+    .mission {
+        width: 45%;
+    }
+
+    .values {
+        margin-top: 50px;
+    }
+}
