@@ -309,8 +309,7 @@ footer {
 }
 
 .footer-credit a:hover {
-    background-color: var(--light-yellow);
-    color: var(--forest-green);
+    text-decoration: underline;
 }
 
 /*
