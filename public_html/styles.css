@@ -1272,10 +1272,6 @@ TABLET STYLES
         margin-left: 20px;
     }
 
-    .location-bham p, .location-tville p {
-        font-size: 1rem;
-    }
-
     .stores {
         margin: 20px;
     }
@@ -1636,11 +1632,7 @@ DESKTOP STYLES
     }
 
     .location-info {
-        margin-right: 30px;
-    }
-
-    .location-bham p, .location-tville p {
-        font-size: 1rem;
+        margin-right: 20px;
     }
 
     .location-bham, .location-tville {
