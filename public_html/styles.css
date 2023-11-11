@@ -36,6 +36,10 @@ body {
     align-items: center;
 }
 
+a, a:visited {
+    color: black;
+}
+
 header, footer {
     border-radius: 5px;
 }
@@ -79,37 +83,29 @@ header, footer {
     }
 }
 
-/* MODAL */
-.modal {
-    display: none;
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0, 0, 0, 0.5);
-}
-
-.modal-content {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    background-color: white;
-    padding: 20px;
+/* BIRTHDAY BANNER */
+.birthday-banner {
+    width: 85%;
+    max-width: 800px;
+    padding: 10px;
+    box-sizing: border-box;
+    transition: max-height 0.3s ease-in-out;
+    background-color: var(--deep-gold);
     border-radius: 5px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin: 20px;
+    border: 10px ridge var(--deep-gold);
 }
 
-.close {
-    position: absolute;
-    top: 10px;
-    right: 10px;
-    font-size: 20px;
-    font-weight: bold;
-    cursor: pointer;
+.birthday-banner-container {
+    display: flex;
+    align-items: flex-start;
 }
 
+.birthday-banner-content {
+    padding: 10px;
+    line-height: 1.5rem;
+    text-align: center;
+}
 
 /*
 *
@@ -353,7 +349,7 @@ HOMEPAGE - MOBILE
 *
 */
 main {
-    margin-top: 40px;
+    margin-top: 20px;
     width: 90%;
     display: flex;
     flex-direction: column;
@@ -1510,7 +1506,7 @@ DESKTOP STYLES
 
     /* HOMEPAGE - DESKTOP */
     #home-main {
-        margin-top: 80px;
+        margin-top: 40px;
         display: flex;
         flex-direction: column;
         justify-content: center;

@@ -28,7 +28,6 @@ const currentYear = new Date().getFullYear();
 
 copyright.innerHTML = `<p>© ${currentYear} Golden Temple Natural Grocery and Cafe</p>`;
 
-
 // image slideshows
 let slideIndex = 0;
 const slideshowImages = document.getElementsByClassName("slideshow-image");
@@ -82,20 +81,3 @@ if (slideshowImages, prevBtn, nextBtn) {
 
   showSlides();
 }
-
-
-
-
-// MODAL
-// Function to open the modal
-function openModal() {
-  document.getElementById('myModal').style.display = 'block';
-}
-
-// Function to close the modal
-function closeModal() {
-  document.getElementById('myModal').style.display = 'none';
-}
-
-// Open the modal when the page loads
-window.onload = openModal;
