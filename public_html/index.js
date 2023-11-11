@@ -35,48 +35,67 @@ const slideshowImages = document.getElementsByClassName("slideshow-image");
 const prevBtn = document.querySelector(".prev");
 const nextBtn = document.querySelector(".next");
 
-showSlides();
+if (slideshowImages, prevBtn, nextBtn) {
+  function showSlides() {
+    for (let i = 0; i < slideshowImages.length; i++) {
+      slideshowImages[i].classList.remove("fade", "slideshow-active");
+    }
 
-function showSlides() {
-  for (let i = 0; i < slideshowImages.length; i++) {
-    slideshowImages[i].classList.remove("fade", "slideshow-active");
+    slideIndex++;
+
+    if (slideIndex > slideshowImages.length) {
+      slideIndex = 1;
+    }
+
+    slideshowImages[slideIndex - 1].classList.add("fade", "slideshow-active");
+
+    setTimeout(showSlides, 5000);
   }
 
-  slideIndex++;
+  prevBtn.addEventListener("click", () => {
+    slideIndex--;
 
-  if (slideIndex > slideshowImages.length) {
-    slideIndex = 1;
-  }
+    if (slideIndex < 1) {
+      slideIndex = slideshowImages.length;
+    }
 
-  slideshowImages[slideIndex - 1].classList.add("fade", "slideshow-active");
+    for (let i = 0; i < slideshowImages.length; i++) {
+      slideshowImages[i].classList.remove("fade", "slideshow-active");
+    }
 
-  setTimeout(showSlides, 5000);
+    slideshowImages[slideIndex - 1].classList.add("fade", "slideshow-active");
+  });
+
+  nextBtn.addEventListener("click", () => {
+    slideIndex++;
+
+    if (slideIndex > slideshowImages.length) {
+      slideIndex = 1;
+    }
+
+    for (let i = 0; i < slideshowImages.length; i++) {
+      slideshowImages[i].classList.remove("fade", "slideshow-active");
+    }
+
+    slideshowImages[slideIndex - 1].classList.add("fade", "slideshow-active");
+  });
+
+  showSlides();
 }
 
-prevBtn.addEventListener("click", () => {
-  slideIndex--;
 
-  if (slideIndex < 1) {
-    slideIndex = slideshowImages.length;
-  }
 
-  for (let i = 0; i < slideshowImages.length; i++) {
-    slideshowImages[i].classList.remove("fade", "slideshow-active");
-  }
 
-  slideshowImages[slideIndex - 1].classList.add("fade", "slideshow-active");
-});
+// MODAL
+// Function to open the modal
+function openModal() {
+  document.getElementById('myModal').style.display = 'block';
+}
 
-nextBtn.addEventListener("click", () => {
-  slideIndex++;
+// Function to close the modal
+function closeModal() {
+  document.getElementById('myModal').style.display = 'none';
+}
 
-  if (slideIndex > slideshowImages.length) {
-    slideIndex = 1;
-  }
-
-  for (let i = 0; i < slideshowImages.length; i++) {
-    slideshowImages[i].classList.remove("fade", "slideshow-active");
-  }
-
-  slideshowImages[slideIndex - 1].classList.add("fade", "slideshow-active");
-});
+// Open the modal when the page loads
+window.onload = openModal;
