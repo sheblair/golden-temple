@@ -141,7 +141,7 @@ MOBILE STYLES
 }
 
 p {
-    font-size: .875rem;
+    font-size: 1rem;
 }
 
 /* SLIDESHOW STYLES - MOBILE */
@@ -725,7 +725,7 @@ SERVICES - MOBILE
 *
 *
 */
-#yoga, #massage, #tarot, #events {
+#yoga, #massage, #tarot, #events, #soundbath {
     width: 100%;
     margin-bottom: 30px;
 }
@@ -737,13 +737,17 @@ SERVICES - MOBILE
 #services-menu ul {
     list-style-type: none;
     display: flex;
-    justify-content: space-between;
+    flex-direction: column;
+    align-items: center;
 }
 
 #services-menu ul li {
     padding: 5px 10px;
+    margin: 10px 0;
     background-color: var(--forest-green);
     border-radius: 5px;
+    text-align: center;
+    width: fit-content;
 }
 
 #services-menu ul li a {
@@ -779,10 +783,6 @@ SERVICES - MOBILE
     padding: 15px 0;
 }
 
-#yoga-intro, #tarot-intro {
-    border-bottom: 1px solid black;
-}
-
 .practitioner-section p {
     padding: 5px 0;
 }
@@ -804,7 +804,7 @@ SERVICES - MOBILE
     margin-bottom: 30px;
 }
 
-.yoga-img, .massage-img, .tarot-img {
+.services-img {
     width: 100%;
     max-width: 100%;
     margin: 15px 0;
@@ -825,6 +825,10 @@ SERVICES - MOBILE
     background-color: var(--forest-green);
 }
 
+.michele-quote {
+    text-align: center;
+}
+
 p.dan-heading, p.dan-schedule {
     padding: 0;
 }
@@ -835,6 +839,29 @@ p.dan-heading, p.dan-schedule {
 
 .dan-subsection > p {
     padding: 0;
+}
+
+.soundbath-info-container {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.soundbath-info p {
+    margin: 20px 0;
+}
+
+.soundbath-contact {
+    text-align: center;
+    margin: 20px 0;
+}
+
+.soundbath-contact p {
+    margin-bottom: 5px;
+}
+
+.soundbath-contact p:first-of-type {
+    margin-bottom: 10px;
+    font-weight: bold;
 }
 
 #events {
@@ -1343,21 +1370,13 @@ TABLET STYLES
 
     /* SERVICES - TABLET */
     #services-menu ul {
+        flex-direction: row;
         justify-content: space-evenly;
     }
 
-    .yoga-img, .massage-img, .tarot-img {
+    .services-img {
         width: 45%;
         max-width: 45%;
-    }
-
-    .yoga-content-section > .practitioner-section {
-        display: flex;
-    }
-
-    .practitioner-section-text {
-        margin-left: 20px;
-        margin-top: 10px;
     }
 
     .michele-intro {
@@ -1407,6 +1426,31 @@ TABLET STYLES
     .dan-info-text {
         width: 50%;
         margin-left: 20px;
+    }
+
+    .soundbath-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .soundbath-info-container {
+        flex-direction: row;
+        flex-wrap: wrap;
+        align-items: flex-start;
+    }
+
+    .soundbath-info {
+        width: 40%;
+        margin-left: 20px;
+        margin-top: 15px;
+    }
+
+    .soundbath-images {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-evenly;
     }
 
     .birthday-info-section {
@@ -1762,11 +1806,6 @@ DESKTOP STYLES
         width: 40%;
     }
 
-    .tarot-img {
-        width: 100%;
-        max-width: 100%;
-    }
-
     .michele-container {
         display: flex;
         flex-flow: row wrap;
@@ -1803,10 +1842,6 @@ DESKTOP STYLES
 
     #tarot > .practitioner-section {
         width: 100%;
-    }
-
-    .tarot-img {
-        width: 50%;
     }
 
     .dan-info {
