@@ -86,7 +86,7 @@ header, footer {
 /* BIRTHDAY BANNER */
 .birthday-banner {
     width: 85%;
-    max-width: 800px;
+    max-width: 900px;
     padding: 10px;
     box-sizing: border-box;
     transition: max-height 0.3s ease-in-out;
@@ -105,6 +105,15 @@ header, footer {
     padding: 10px;
     line-height: 1.5rem;
     text-align: center;
+}
+
+.birthday-banner-content a {
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.birthday-banner-content a:hover {
+    text-decoration: underline;
 }
 
 /*
@@ -310,9 +319,10 @@ footer {
     margin-top: 20px;
 }
 
-.footer-icons a {
+.footer-icons i {
     color: var(--deep-gold);
-    margin: 0 5px;
+    margin: 0 10px;
+    font-size: 1.2rem;
 }
 
 .copyright-container {
@@ -325,7 +335,7 @@ footer {
 }
 
 .copyright p, .footer-credit {
-    font-size: .65rem;
+    font-size: .8rem;
     font-style: italic;
     color: var(--deep-gold)
 }
@@ -429,7 +439,7 @@ main {
 }
 
 .location-bham p, .location-tville p {
-    font-size: .75rem;
+    font-size: .875rem;
 }
 
 .location-bham a, .location-tville a {
@@ -1181,7 +1191,7 @@ TABLET STYLES
     }
 
     .copyright p, .footer-credit {
-        font-size: .7rem;
+        font-size: .8rem;
     }
 
     /* HOMEPAGE - TABLET */
@@ -1467,6 +1477,12 @@ DESKTOP STYLES
         padding: 30px;
     }
 
+    /* BIRTHDAY BANNER - DESKTOP */
+    .birthday-banner-content p {
+        font-size: 1.2rem;
+        line-height: 1.8rem;
+    }
+
     /* HEADER - DESKTOP */
     #mobile-nav {
         display: none;
@@ -1576,7 +1592,7 @@ DESKTOP STYLES
     }
 
     .location-bham p, .location-tville p {
-        font-size: .8rem;
+        font-size: 1rem;
     }
 
     .location-bham, .location-tville {
