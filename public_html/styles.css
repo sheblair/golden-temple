@@ -622,7 +622,7 @@ LOCATIONS - MOBILE
     line-height: 1.4rem;
 }
 
-.bham-info, .cafe-info, .tville-info, .tville-hours {
+.bham-info, .tville-info, .tville-hours {
     background-color: var(--deep-gold);
     padding: 10px;
     border-radius: 5px;
@@ -1306,7 +1306,6 @@ TABLET STYLES
     .location-bham, .location-tville {
         display: flex;
         flex-flow: row wrap;
-        justify-content: space-between;
         align-items: flex-start;
     }
 
@@ -1314,10 +1313,9 @@ TABLET STYLES
         margin-top: 30px;
     }
 
-    #iframe-bham-home, #iframe-tville-home {
-        width: 45%;
+    .contact * iframe {
         margin-top: 0;
-        justify-self: flex-end;
+        margin-left: 40px;
     }
 
     /* BOUTIQUE - TABLET */
@@ -1355,7 +1353,7 @@ TABLET STYLES
         margin: 10px 10px 10px 0;
     }
 
-    .bham-text, .cafe-text, .tville-text {
+    .bham-text, .tville-text {
         margin-left: 10px;
         margin-top: 10px;
     }
@@ -1690,8 +1688,8 @@ DESKTOP STYLES
         margin-top: 15px;
     }
 
-    #iframe-bham-home, #iframe-tville-home{
-        width: 50%;
+    .contact * iframe {
+        margin-left: 0;
     }
 
     .visit-us, .follow-us {
@@ -1715,25 +1713,30 @@ DESKTOP STYLES
     .trussville-main-container {
         flex-direction: row;
         justify-content: space-between;
+        align-items: flex-start;
     }
 
     .bham-left {
-        width: 50%;
+        width: 40%;
         margin-right: 15px;
     }
 
     .bham-right {
-        width: 48%;
+        width: 55%;
+    }
+
+    .bham-info {
+        margin-top: 0;
     }
 
     .bham-info, .cafe-info {
         display: flex;
         flex-direction: row;
+        align-items: center;
     }
 
-    #iframe-bham, #iframe-cafe {
-        width: 200px;
-        height: 200px;
+    .bham-info iframe {
+        margin-top: 0;
     }
 
     .bham-text, .cafe-text {
