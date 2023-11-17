@@ -509,9 +509,10 @@ ABOUT - MOBILE
 *
 *
 */
-.banner {
+.about-banner {
     width: 100%;
     max-width: 100%;
+    min-height: 252px;
     background-color: var(--deep-gold);
     padding: 10px;
     border-radius: 5px;
@@ -1973,7 +1974,7 @@ DESKTOP STYLES
         font-size: 1.3rem;
     }
 
-    .banner {
+    .about-banner {
         width: 50%;
     }
 
