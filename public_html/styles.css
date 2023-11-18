@@ -1794,11 +1794,17 @@ DESKTOP STYLES
         margin-bottom: 50px;
     }
 
-    .yoga-content-section {
+    .yoga-practitioner-section {
         display: flex;
-        flex-flow: row wrap;
-        justify-content: space-between;
-        align-items: flex-start;
+        margin-top: 20px;
+    }
+
+    .yoga-practitioner-section img {
+        margin: 0 20px 0 0;
+    }
+
+    .yoga-practitioner-section-text {
+        width: 40%;
     }
 
     #yoga-intro, .yoga-schedule {
