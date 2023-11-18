@@ -235,6 +235,7 @@ header {
     width: 85%;
     max-width: 85%;
     margin: 20px;
+    min-height: 130px;
 }
 
 .navbar {
