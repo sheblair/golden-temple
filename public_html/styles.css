@@ -378,6 +378,7 @@ main {
 .hero-img-upper, .hero-img-lower {
     width: 100%;
     max-width: 100%;
+    min-height: 290px;
     border-radius: 5px;
 }
 
@@ -387,6 +388,7 @@ main {
 
 .hero-img-lower {
     margin: 25px 0;
+    min-height: 250px;
 }
 
 .hero-text-lower, .hero-text-upper {
